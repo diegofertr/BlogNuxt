@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Oswald|Pathway+Gothic+One|Rajdhani&display=swap');
+
+$fontOswald: 'Oswald', sans-serif;
+$fontCondensed: 'Open Sans Condensed', sans-serif;
+$fontAmatic: 'Amatic SC', cursive;
+$fontRajdhani: 'Rajdhani', sans-serif;
+$fontPathway: 'Pathway Gothic One', sans-serif;
+
+
 $font-base-color:             $grey-2;
 $font-family-base:            'Graphik', Arial, sans-serif;
 $font-family-blog:            'Tiempos Headline', Arial, sans-serif;
@@ -23,7 +32,8 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
+  // font-family: $font-family-base;
+  font-family: $fontCondensed;
   font-size: $fs-base-responsive;
   color: $font-base-color;
   line-height: $line-height-base;

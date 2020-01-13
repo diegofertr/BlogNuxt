@@ -10,13 +10,28 @@ export default {
     title: "Hello, I'm Diego F. Ticona Ramos",
     menu: {
       home: 'Home',
-      portfolio: 'Portfolio',
-      about: 'About'
+      writing: 'Writing',
+      projects: 'Projects',
+      about: 'About',
+      contact: 'Contact'
     },
-    profession: 'A Full-Stack, Back-End & Front-End Developer',
+    profession: 'Frontend developer, passionate about video game development',
     slogan: 'Design, Development and Implementation of dynamic solutions.'
   },
   posts: 'Posts',
+  profile: {
+    title: "Hello, I'm Diego F. Ticona Ramos",
+    profession: 'Frontend developer, passionate about video game development',
+  },
+  writing: {
+    title: 'Blog content'
+  },
+  portfolio: {
+    title: 'Personal projects'
+  },
+  contact: {
+    title: 'Contact Form'
+  },
   home: 'Home',
   footer: footer
 }

@@ -1,12 +1,8 @@
 <template>
   <div class="page-index">
     <div class="container">
-      <h1>Hola, soy Diego F. Ticona Ramos</h1><br>
-      <h3>Frontend & Backend Developer</h3>
-      <nuxt-link
-        to="/">
-        Atrás
-      </nuxt-link>
+      <h1>{{ $t('profile.title') }}</h1><br>
+      <h3>{{ $t('profile.profession') }}</h3>
       <!-- <BlogSection :blogs="blogs"/> -->
     </div>
   </div>
@@ -14,7 +10,7 @@
 
 <script>
 export default {
-  layout: 'contenido'
+  layout: 'seccion'
 }
 </script>
 

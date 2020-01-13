@@ -102,7 +102,20 @@ module.exports = {
   modules: [  
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N],
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    [
+      'nuxt-fontawesome', {
+        imports: [
+         {
+           set: '@fortawesome/free-solid-svg-icons',
+           icons: ['fas']
+         },
+         {
+           set:'@fortawesome/free-brands-svg-icons',
+           icons: ['fab']
+         }
+       ]
+    }]
   ],
 
   styleResources: {

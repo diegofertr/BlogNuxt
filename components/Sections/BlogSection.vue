@@ -29,21 +29,21 @@ export default {
 </script>
 <style lang="scss">
 .blogs {
-  margin-top: -110px;
+  // margin-top: -110px;
   display: grid;
   justify-items: center;
 
   h2 {
-    color: #fff;
+    color: $primary;
   }
 
   &__container {
-    // margin: 0;
-    margin-top: -30px;
+    margin: 0;
+    // margin-top: -30px;
     
     @media (min-width: $screen-sm){
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
       display: grid;
     }
   
@@ -51,7 +51,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-top: 4rem;
+      // margin-top: 4rem;
     }
   }
 }

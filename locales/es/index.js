@@ -10,11 +10,26 @@ export default {
     title: 'Hola, soy Diego F. Ticona Ramos',
     menu: {
       home: 'Inicio',
-      portfolio: 'Portafolio',
-      about: 'Sobre mí'
+      writing: 'Blog',
+      projects: 'Proyectos',
+      about: 'Sobre mí',
+      contact: 'Contáctame'
     },
-    profession: 'Desarrollador Full-Stack, Back-End y Front-End',
+    profession: 'Desarrollador Frontend, apasionado por el desarrollo de Videojuegos',
     slogan: 'Diseño, Desarrollo e Implementación de soluciones dinámicas.'
+  },
+  profile: {
+    title: 'Hola, soy Diego F. Ticona Ramos',
+    profession: 'Desarrollador Frontend, apasionado por el desarrollo de Videojuegos',
+  },
+  writing: {
+    title: 'Contenido de blog'
+  },
+  portfolio: {
+    title: 'Proyectos personales'
+  },
+  contact: {
+    title: 'Formulario de contacto'
   },
   posts: 'Posts',
   home: 'Home',
