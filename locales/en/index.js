@@ -24,7 +24,7 @@ export default {
     profession: 'Frontend developer, passionate about video game development',
   },
   writing: {
-    title: 'Blog content'
+    title: 'Writing'
   },
   portfolio: {
     title: 'Personal projects'

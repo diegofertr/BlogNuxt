@@ -6,7 +6,6 @@
         {{ locale.code }}
       </option>
     </select>
-    <font-awesome-icon class="iconito" style="color: white;" :icon="['fas', 'angle-down']"/>
   </div>
 </template>
 
@@ -38,21 +37,26 @@ select {
   -moz-appearance: none;
   appearance: none;
   font-size: 1.5rem;
-  // background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 50'><polygon fill='rgb(255, 255, 255)' points='0,0 100,0 50,50'/></svg>") no-repeat;
-  background: rgba($color: $primary, $alpha: 0.7);
-  // background-size: 12px;
-  // background-position: calc(100% - 1rem) center;
-  // background-repeat: no-repeat;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 50'><polygon fill='rgb(255, 255, 255)' points='0,0 100,0 50,50'/></svg>") no-repeat;
+  // background: rgba($color: $primary, $alpha: 0.7);
+  background-size: 12px;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
   text-transform: uppercase;
   transition: border-color .3s;
   cursor: pointer;
 
   &:hover {
-    border-color: $primary;
+    border-color: $primary-light;
   }
   
   &:focus {
     outline: none;
   }
+}
+
+option {
+  color: $primary;
+  font-weight: bold;
 }
 </style>

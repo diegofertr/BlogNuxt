@@ -14,11 +14,11 @@
    viewBox="0 0 200 200"
    version="1.1"
    id="svg852"
-   inkscape:export-filename="/home/dev/bitmap.png"
+   inkscape:export-filename="/home/dev/loggito.png"
    inkscape:export-xdpi="216.74667"
    inkscape:export-ydpi="216.74667"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="loggex.svg">
+   sodipodi:docname="loggexLight.svg">
   <defs
      id="defs846" />
   <sodipodi:namedview
@@ -58,12 +58,12 @@
      id="layer1"
      transform="translate(0,-97)">
     <path
-       style="fill:none;stroke:#6e1217;stroke-width:5.44617319;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#f8f4f4;stroke-width:5.44617319;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 61.610414,209.69456 100.745,182.10689 v -13.79382 l -58.22462,41.38149 57.270105,28.64872 -0.954519,12.73277 -55.361088,-27.5876"
        id="path4756-8"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#6e1217;stroke-width:7.06232834;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#f8f3f4;stroke-width:7.06232834;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 74.663686,275.09365 154.11725,112.37584 168.94399,110.84077 98.073091,253.6027"
        id="path4773-6"
        inkscape:connector-curvature="0"

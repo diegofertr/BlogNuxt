@@ -23,7 +23,7 @@ export default {
     profession: 'Desarrollador Frontend, apasionado por el desarrollo de Videojuegos',
   },
   writing: {
-    title: 'Contenido de blog'
+    title: 'Blog'
   },
   portfolio: {
     title: 'Proyectos personales'

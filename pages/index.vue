@@ -5,9 +5,11 @@
       <div class="contenido">
         <div class="contenido__descripcion">
           <div class="avatar"></div>
-          <div class="descripcion">
+          <div class="contenido__descripcion-banner">
             <h1 class="titulo">{{ $t('header.title') }}</h1>
-            <p>{{ $t('header.profession') }}</p>
+            <!-- <p>somes</p> -->
+            <p v-if="active" @mouseover="active = !active">{{ $t('header.profession') }}</p>
+            <p v-else @mouseleave="active = !active">Never stop learning!</p>
           </div>
         </div>
         <div class="contenido__social">
@@ -26,7 +28,8 @@
     </div>
     <div class="page-index">
       <div class="container">
-        <BlogSection :blogs="blogs"/>
+        <p>Contenido principal, en desarrollo...</p>
+        <!-- <BlogSection :blogs="blogs"/> -->
       </div>
     </div>
   </section>
@@ -78,6 +81,12 @@
           { name: "twitter:image", content: this.ogImage }
         ]
       };
+    },
+
+    data () {
+      return {
+        active: true
+      }
     },
 
     computed: {
@@ -140,41 +149,43 @@
         height: 15rem;
         background-size: cover;
         border-radius: 50%;
-        border: .48rem groove $primary;
+        border: .35rem groove $primary;
       }
+
+      .contenido__descripcion-banner {
+        margin-top: 2rem;
+        // background: rgba($color: #fafafa, $alpha: 0.15);
+        // padding: 2rem;
+        // border-radius: 5px;
   
-      // .descripcion {
-      //   background: rgba($color: #fafafa, $alpha: 0.15);
-      //   padding: 2rem;
-      //   border-radius: 5px;
-  
-      //   .titulo {
-      //     margin: 0;
-      //   }
-      // }
+        // .titulo {
+        //   margin: 0;
+        // }
+      }
     }
 
+
     &__social {
-      // background: rgba($color: white, $alpha: 0.3);
-      // height: 18rem;
       color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      // padding: 1rem;
     }
 
     &__social-button {
-      background: rgba($color: $primary, $alpha: 0.8);
+      background: rgba($color: $primary, $alpha: 0.3);
+      // width: 5rem;
       color: white;
       font-size: 2.6rem;
       padding: 3px 15px;
+      // display: grid;
+      // justify-content: center;
+      border-bottom: 1px solid rgba($color: $primary, $alpha: 0.5);
 
       &:hover {
-        background: rgba($color: $primary, $alpha: 0.3);
-        transform: translate(-15px);
+        background: rgba($color: $primary, $alpha: 0.5);
+        transform: translate(-1.5rem);
         transition: all 0.1s ease-in 0.1s;
-        // font-size: 2.6rem;
       }
     }
 

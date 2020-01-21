@@ -53,7 +53,7 @@ module.exports = {
   */
   loading: {
     // color: '#5a46ff',
-    color: '#f9a825',
+    color: '#6e1217',
     height: '3px'
   },
   /*
@@ -129,7 +129,25 @@ module.exports = {
 
   webfontloader: {
     custom: {
-      families: ['Graphik', 'Tiempos Headline'],
+      families: [
+        'Graphik',
+        'Tiempos Headline',
+        'Atomic Age',
+        'Economica',
+        'Montserrat',
+        'Open Sans Condensed',
+        'Caveat',
+        'Oswald',
+        'Pathway Gothic One',
+        'Poiret One',
+        'Rajdhani',
+        'Roboto Condensed',
+        'Rock Salt',
+        'Satisfy',
+        'Special Elite',
+        'Titillium Web',
+        'Univers'
+      ],
       urls: ['/fonts/fonts.css']
     }
   },

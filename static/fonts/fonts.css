@@ -21,3 +21,59 @@
 	font-weight: 400;
   src: url("/fonts/Tiempos-Headline-Semibold.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+	src: local('Open Sans Condensed'), local('OpenSansCondensed'), url('/fonts/OpenSansCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Pathway Gothic One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pathway Gothic One'), local('PathwayGothicOne'), url('/fonts/PathwayGothicOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Poiret One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poiret One'), local('PoiretOne'), url('/fonts/PoiretOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Rajdhani';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Rajdhani'), url('/fonts/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Satisfy';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Satisfy'), url('/fonts/Satisfy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Special Elite';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Special Elite'), local('SpecialElite'), url('/fonts/SpecialElite-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Titillium Web'), local('TitilliumWeb'), url('/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Univers';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Univers'), url('/fonts/UniversLTStd-Light.otf') format('truetype');
+}
