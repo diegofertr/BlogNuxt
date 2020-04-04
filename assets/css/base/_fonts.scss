@@ -1,18 +1,13 @@
 // Fonts Definition
-$fontOpenSansCondensed: 'Open Sans Condensed';
-$fontPathwayGothicOne: 'Pathway Gothic One';
-$fontPoiretOne: 'Poiret One';
-$fontRajdhani: 'Rajdhani'; // Aprobado
-$fontSatisfy: 'Satisfy'; // Pendiente
-$fontSpecialElite: 'Special Elite'; // Aprobado
-$fontTitiliumWeb: 'Titillium Web';// No
-$fontUnivers: 'Univers';
+$fontSatisfy: 'Satisfy';
+$fontSpecialElite: 'Special Elite';
+$fontRajdhani: 'Rajdhani';
 $fontGraphik: 'Graphik';
 
 $font-base-color:             $grey-2;
-$font-family-base:            $fontSpecialElite, Arial, sans-serif;
+$font-family-base:            $fontGraphik, Arial, sans-serif;
 $font-family-blog:            'Tiempos Headline', Arial, sans-serif;
-$line-height-base:            1.5;
+$line-height-base:            1.1;
 $fs-base:                     1.6rem;
 $fs-base-responsive:          1.4rem;
 $fs-large:                    3rem;
@@ -94,7 +89,7 @@ h1,.h1{
   font-size: $fs-large-responsive;
   margin-top: 0;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
   @media (min-width: $screen-sm){
     font-size: $fs-h1;
   }
@@ -105,32 +100,32 @@ h2,.h2{
   color: $secondary;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
   display: inline-block;
   
   @media (min-width: $screen-sm){
-    padding-bottom: 48px;
+    padding-bottom: 18px;
   }
 }
 
 h3,.h3{
   font-size: $fs-h3;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
   font-weight: regular;
 }
 
 h4,.h4{
   font-size: $fs-h4;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
   font-weight: regular;
 }
 
 h5,.h5{
   font-size: $fs-h5;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
   font-weight: regular;
 }
 

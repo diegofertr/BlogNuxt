@@ -18,6 +18,12 @@ export default {
     profession: 'Desarrollador Frontend, apasionado por el desarrollo de Videojuegos',
     slogan: 'Diseño, Desarrollo e Implementación de soluciones dinámicas.'
   },
+  banner: {
+    hello: 'Hola, mi nombre es',
+    name: 'Diego F. Ticona Ramos',
+    subtitle: "Desarrollo soluciones digitales para la web",
+    description: "Soy ingeniero de software con sede en La Paz, Bolivia. Especializado en crear (y ocasionalmente diseñar) sitios web y aplicaciones exepcionales de alta calidad."
+  },
   profile: {
     title: 'Hola, soy Diego F. Ticona Ramos',
     profession: 'Desarrollador Frontend, apasionado por el desarrollo de Videojuegos',

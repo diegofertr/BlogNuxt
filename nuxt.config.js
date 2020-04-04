@@ -23,7 +23,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       // { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
-      { name: 'msapplication-TileImage', content: '/favicons/loggex.png' },
+      { name: 'msapplication-TileImage', content: '/favicons/favicon.ico' },
       { name: 'theme-color', content: '#c1c1c1' },
       { name: 'robots', content: 'index, follow' },
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -32,7 +32,7 @@ module.exports = {
       { property: 'og:updated_time', content: builtAt }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicons/loggex.png', sizes: '16x16' },
+      { rel: 'icon', type: 'image/png', href: '/favicons/favicon.ico', sizes: '16x16' },
       // { rel: 'icon', type: 'image/png', href: '/favicons/favicon-32x32.png', sizes: '32x32' },
       // { rel: 'icon', type: 'image/png', href: '/favicons/android-chrome-96x96.png', sizes: '96x96' },
       // { rel: 'icon', type: 'image/png', href: '/favicons/android-chrome-192x192.png', sizes: '192x192' },
@@ -53,7 +53,7 @@ module.exports = {
   */
   loading: {
     // color: '#5a46ff',
-    color: '#6e1217',
+    color: '#0a182e',
     height: '3px'
   },
   /*
@@ -131,22 +131,11 @@ module.exports = {
     custom: {
       families: [
         'Graphik',
-        'Tiempos Headline',
-        'Atomic Age',
-        'Economica',
-        'Montserrat',
-        'Open Sans Condensed',
-        'Caveat',
-        'Oswald',
-        'Pathway Gothic One',
-        'Poiret One',
         'Rajdhani',
-        'Roboto Condensed',
-        'Rock Salt',
         'Satisfy',
         'Special Elite',
-        'Titillium Web',
-        'Univers'
+        'Tiempos Headline',
+        'Atomic Age',
       ],
       urls: ['/fonts/fonts.css']
     }

@@ -18,6 +18,12 @@ export default {
     profession: 'Frontend developer, passionate about video game development',
     slogan: 'Design, Development and Implementation of dynamic solutions.'
   },
+  banner: {
+    hello: 'Hi, my name is',
+    name: 'Diego F. Ticona Ramos',
+    subtitle: "I develop digital solutions for the web",
+    description: "I'm a software engineer based in La Paz, Bolivia. Specialized in building and designing exceptional, high-quality websites and applications."
+  },
   posts: 'Posts',
   profile: {
     title: "Hello, I'm Diego F. Ticona Ramos",

@@ -2,8 +2,7 @@
   <header>
     <div class="hero" :class="{'seccion': seccion}">
       <nuxt-link :to="localePath('index')">
-        <img v-if="!seccion" src="../../assets/images/loggex.svg" class="hero__logo" alt="logo-principal">
-        <img v-else src="../../assets/images/loggexLight.svg" class="hero__logo" alt="logo-principal">
+        <img src="../../assets/images/logo-diego.svg" class="hero__logo" alt="logo-principal">
       </nuxt-link>
       <nav class="hero__nav">
         <!-- <nuxt-link to="/">{{ $t('header.menu.home') }}</nuxt-link> -->
@@ -47,31 +46,24 @@ export default {
 
 <style lang="scss">
 .seccion {
-  background-color: $primary-darken;
-
-  // .hero__nav {
-  //   a {
-  //     color: $primary;
-  //   }
-  // }
-  .hero__logo {
-    border: 1px solid white;
-  }
+  -webkit-box-shadow: 0px 9px 7px 5px rgba(202,202,202,1);
+  -moz-box-shadow: 0px 9px 7px 5px rgba(202,202,202,1);
+  box-shadow: 0px 9px 7px 5px #ebe7e7;
 }
 
 .hero {
   padding: 10px;
   // background: rgba($color: white, $alpha: 0.3);
-  border-bottom: 1px solid rgba($color: white, $alpha: 0.3);
+  // border-bottom: 1px solid rgba($color: white, $alpha: 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   // font-family: $fontOswald;
 
   &__logo {
-    width: 6.2rem;
+    width: 5rem;
     border-radius: 5px;
-    border: 1px solid $primary;
+    // border: 1px solid $primary;
   }
 
   &__nav {
@@ -81,7 +73,8 @@ export default {
 
     a {
       margin: 0 10px;
-      color: white;
+      // color: white;
+      color: #0a182e;
       // text-transform: uppercase;
       font-size: 1.5rem;
 
