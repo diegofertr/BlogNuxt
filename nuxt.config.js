@@ -20,7 +20,7 @@ module.exports = {
     title: 'Diego F. Ticona Ramos | Front-end Developer & Game Developer Aspirant',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       // { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
       { name: 'msapplication-TileImage', content: '/favicons/favicon.ico' },
@@ -136,10 +136,7 @@ module.exports = {
       families: [
         'Graphik',
         'Rajdhani',
-        'Satisfy',
-        'Special Elite',
-        'Tiempos Headline',
-        'Atomic Age',
+        'Tiempos Headline'
       ],
       urls: ['/fonts/fonts.css']
     }

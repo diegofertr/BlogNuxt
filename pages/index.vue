@@ -51,7 +51,7 @@
         </div>
 
         <div class="contenido__img">
-          <img class="image-carousel" src="../assets/images/devConcept.svg" alt="dev">
+          <img class="image-carousel" src="../assets/images/devConcept.png" alt="Developer concept image">
         </div>
       </div>
     </div>
@@ -226,7 +226,7 @@
       }
 
       img {
-        width: 350px;
+        width: 400px;
       }
     }
 

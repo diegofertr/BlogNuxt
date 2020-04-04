@@ -28,17 +28,3 @@
 	font-weight: 400;
 	src: url("/fonts/Rajdhani-Regular.ttf") format("truetype");
 }
-
-@font-face {
-	font-family: 'Satisfy';
-	font-style: normal;
-	font-weight: 400;
-	src: url("/fonts/Satisfy-Regular.ttf") format("truetype");;
-}
-
-@font-face {
-	font-family: 'Special Elite';
-	font-style: normal;
-	font-weight: 400;
-	src: local("SpecialElite"), url("/fonts/SpecialElite-Regular.ttf") format("truetype");
-}
