@@ -1,8 +1,9 @@
 <template>
   <div class="enlace">
-    <select v-model="selected" @change="changeLocale()" class="lang-switcher">
-      <option :value="selected" selected>{{ $i18n.locale }}</option>
-      <option v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :key="locale.code" >
+    <!-- <label for="language" class="labeel">Select Language: </label> -->
+    <select v-model="selected" @change="changeLocale()" class="lang-switcher" aria-label="Select Language">
+      <option :value="selected" :aria-label="$i18n.locale" selected>{{ $i18n.locale }}</option>
+      <option v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :aria-label="locale.code" :key="locale.code" >
         {{ locale.code }}
       </option>
     </select>

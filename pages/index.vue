@@ -3,17 +3,32 @@
     <div class="social">
       <ul class="social__content">
         <li>
-          <a class="social__content-button" href="https://github.com/diegofertr" target="_blank">
+          <a
+            class="social__content-button"
+            href="https://github.com/diegofertr"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ver proyectos en github">
             <font-awesome-icon class="social__content-icon" :icon="['fab', 'github']"/>
           </a>
         </li>
         <li>
-          <a class="social__content-button" href="https://www.linkedin.com/in/diegofertr/" target="_blank">
+          <a
+            class="social__content-button"
+            href="https://www.linkedin.com/in/diegofertr/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ver perfil en linkedin">
             <font-awesome-icon class="social__content-icon" :icon="['fab', 'linkedin']"/>
           </a>
         </li>
         <li>
-          <a class="social__content-button" href="https://twitter.com/diegofertr" target="_blank">
+          <a 
+            class="social__content-button" 
+            href="https://twitter.com/diegofertr" 
+            target="_blank"
+            rel="noopener"
+            aria-label="Ver tweets">
             <font-awesome-icon class="social__content-icon" :icon="['fab', 'twitter']"/>
           </a>
         </li>

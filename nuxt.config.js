@@ -20,7 +20,7 @@ module.exports = {
     title: 'Diego F. Ticona Ramos | Front-end Developer & Game Developer Aspirant',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       // { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
       { name: 'msapplication-TileImage', content: '/favicons/favicon.ico' },
@@ -98,7 +98,11 @@ module.exports = {
       });
     }
   },
-  plugins: ['~/plugins/lazyload', '~/plugins/globalComponents', { src: '~plugins/ga.js', ssr: false }],
+  plugins: [
+    '~/plugins/lazyload',
+    '~/plugins/globalComponents',
+    { src: '~plugins/ga.js', ssr: false }
+  ],
   modules: [  
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N],
