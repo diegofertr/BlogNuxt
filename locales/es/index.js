@@ -39,5 +39,13 @@ export default {
   },
   posts: 'Posts',
   home: 'Home',
-  footer: footer
+  footer: footer,
+  content: {
+    about: {
+      title: 'Sobre mí',
+      descriptionFirst: 'Soy desarrollador de software con especial gusto por el frontend, actualmente resido en La Paz, Bolivia. Estudié Informática en la Universidad Mayor de San Andrés en mi ciudad natal.',
+      descriptionSecond: 'Realicé diversas pasantías en investigación y desarrollo web. Durante mi experiencia profesional he trabajado más con tecnologías de Javascript, tanto para el backend como para el frontend.',
+      descriptionThird: 'Soy un apasionado por aprender nuevas tecnologías y crear nuevas cosas que ayuden a optimizar la vida de las personas.'
+    }
+  }
 }

@@ -39,5 +39,11 @@ export default {
     title: 'Contact Form'
   },
   home: 'Home',
-  footer: footer
+  footer: footer,
+  content: {
+    about: {
+      title: 'About me',
+      description: "Hi! I'm a Web Developer",
+    }
+  }
 }
