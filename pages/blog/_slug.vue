@@ -6,7 +6,7 @@
           <div class="elevate-cover__left">
             <nuxt-link :to="localePath('blog')">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" aria-hidden="true" style="width: 16px; transform: rotate(180deg);">
-                  <polygon fill="currentColor" points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"/>
+                <polygon fill="currentColor" points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"/>
               </svg>
               {{ $t('comeBack') }}
             </nuxt-link>
@@ -18,8 +18,7 @@
               <nuxt-link
                 v-for="(locale, i) in showLocales"
                 :key="i"
-                :to="`${locale.code == 'en' ? '' : '/' + locale.code}/blog/${trans}`" 
-              >
+                :to="`${locale.code == 'en' ? '' : '/' + locale.code}/blog/${trans}`" >
                   {{ $t('changeLanguagePost') }}
               </nuxt-link>
             </span>
@@ -206,7 +205,8 @@
 
   &__title {
     font-size: 3rem;
-    font-family: 'Tiempos Headline', Arial, sans-serif;
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: bold;
     color: $secondary;
 
     @media (min-width: $screen-sm){
@@ -227,6 +227,7 @@
   font-size: 16px;
   line-height: 1.7;
   color: $secondary;
+  font-family: 'Nunito', Arial, sans-serif;
 
   > *:not(.datagrid):not(.image-placeholder) {
     max-width: 700px;
@@ -261,7 +262,9 @@
   pre {
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     padding: 2.4rem;
-    border-radius: 4px;
+    border-radius: 8px;
+    border-top-right-radius: 10px;
+    // background-color: #2d2d2d; //dark mode
     background-color: #f6f8fa;
     overflow-x: scroll;
     display: block;
@@ -269,6 +272,18 @@
 
     code {
       background-color: #f6f8fa;
+    }
+
+    // Styles for javascript language
+    code.language-javascript { color: #61afef }
+    code.language-javascript,.hljs {
+      &-keyword   { color: #d55fde }
+      &-title     { color: #61afef }
+      &-params    { color: #ef596f }
+      &-built_in  { color: #e5c07b }
+      &-string    { color: #89ca78 }
+      &-number    { color: #d19a66 }
+      &-literal   { color: #e5c07b }
     }
   }
 

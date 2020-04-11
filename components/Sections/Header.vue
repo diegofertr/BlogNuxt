@@ -3,6 +3,7 @@
     <div class="hero" :class="{'seccion': seccion}">
       <nuxt-link :to="localePath('index')">
         <img src="../../assets/images/logo-diego.svg" class="hero__logo" alt="logo-principal">
+        <!-- <img src="../../assets/images/logoAlternativa2.svg" class="hero__logo" alt="logo-principal"> -->
       </nuxt-link>
       <nav class="hero__nav">
         <!-- <nuxt-link to="/">{{ $t('header.menu.home') }}</nuxt-link> -->

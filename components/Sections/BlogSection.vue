@@ -3,7 +3,6 @@
     <div class="blogs__top">
       <div>
         <h2>{{ $t('writing.title') }}</h2>
-        <!-- <h2>Blog</h2> -->
         <span class="emoji-title emoji--writing"/>
       </div>
     </div>
@@ -29,7 +28,6 @@ export default {
 </script>
 <style lang="scss">
 .blogs {
-  // margin-top: -110px;
   display: grid;
   justify-items: center;
 
@@ -38,12 +36,13 @@ export default {
   }
 
   &__container {
-    margin: 0;
-    // margin-top: -30px;
+    // margin-left: -20px;
+    // margin-right: -20px;
+    margin-top: 2rem;
     
     @media (min-width: $screen-sm){
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 25px;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
       display: grid;
     }
   
@@ -58,13 +57,17 @@ export default {
 
 @media screen and (max-width: 768px){
   .blogs {
-    margin-top: -60px;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(100vw - 50px);
-    &__top {
-      display: none;
+    // margin-top: -60px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    &__container {
+      display: initial;
     }
+    // width: calc(100vw - 50px);
+    // &__top {
+    //   display: none;
+    // }
   }
 }
 </style>

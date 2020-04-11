@@ -136,7 +136,8 @@ module.exports = {
       families: [
         'Graphik',
         'Rajdhani',
-        'Tiempos Headline'
+        'Tiempos Headline',
+        'Nunito'
       ],
       urls: ['/fonts/fonts.css']
     }

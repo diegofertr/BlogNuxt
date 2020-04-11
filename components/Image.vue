@@ -1,8 +1,7 @@
 <template lang="html">
   <div
     v-lazy-container="{ selector: 'img' }"
-    :class="`image-placeholder ${isRounded}`"
-  >
+    :class="`image-placeholder ${isRounded} ${isRoundShadow}`">
     <img
       :data-src="imageRequired"
       :data-loading="imageRequired.placeholder"
@@ -38,6 +37,10 @@ export default {
     rounded: {
       type: Boolean,
       default: false
+    },
+    roundShadow: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -46,6 +49,9 @@ export default {
     },
     isRounded () {
       return this.rounded ? 'image-placeholder--rounded' : ''
+    },
+    isRoundShadow () {
+      return this.roundShadow ? 'image-placeholder--roundShadow' : ''
     }
   }
 }
@@ -60,11 +66,18 @@ export default {
   &--rounded {
     border-radius: 100%;
   }
+
+  &--roundShadow {
+    border-radius: 10px;
+    // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.85);
+    box-shadow: 0 10px 40px 0 rgba(62,57,107,.2),0 2px 9px 0 rgba(62,57,107,.2);
+  }
 }
 
 img {
   transition: all ease .3s;
   opacity: 0;
+  object-fit: cover;
 
   &[lazy='loading'] {
     opacity: 1;

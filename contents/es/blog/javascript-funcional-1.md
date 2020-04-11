@@ -1,7 +1,7 @@
 ---
 name: 'javascript-funcional-1'
 title: Programación Funcional en Javascript, 1ra parte
-year: 16 Diciembre 2019
+year: Feb 16
 color: '#8e7964'
 # trans: '10-best-es6-features'
 id: 'js-functional'
