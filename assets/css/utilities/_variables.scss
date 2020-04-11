@@ -4,8 +4,10 @@
 $primary:             #0a182e;
 
 // $primary:             #581845;
-$primary-light:       lighten($primary, 20%);;
+// color: #2762ba;
+$primary-light:       lighten($primary, 20%);
 $primary-lighter:     lighten($primary, 30%);
+$primary-lighter1:    lighten($primary, 40%);
 $primary-darken:      darken($primary, 15%);
 $secondary:           #030303;
 $grey-1:     #161618;

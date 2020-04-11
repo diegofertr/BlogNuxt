@@ -38,8 +38,7 @@
         <component
           v-else
           class="elevate-cover__img"
-          :is="extraComponentLoader"
-        />
+          :is="extraComponentLoader" />
       </div>
     </div>
     <div class="container small">
@@ -176,6 +175,7 @@
   display: flex;
   flex-direction: column;
   min-height: 459px;
+  font-family: 'Nunito', Arial, sans-serif;
 
   @media (min-width: $screen-md){
     flex-direction: row;
@@ -205,7 +205,6 @@
 
   &__title {
     font-size: 3rem;
-    font-family: 'Nunito', Arial, sans-serif;
     font-weight: bold;
     color: $secondary;
 
@@ -220,6 +219,7 @@
     animation: fadeinmove .5s ease;
     animation-delay: .5s;
     animation-fill-mode: forwards;
+    text-align: justify;
   }
 }
 .dynamicMarkdown {
@@ -228,6 +228,8 @@
   line-height: 1.7;
   color: $secondary;
   font-family: 'Nunito', Arial, sans-serif;
+  text-align: justify;
+  // font-family: 'Tiempos Headline', Arial, sans-serif;
 
   > *:not(.datagrid):not(.image-placeholder) {
     max-width: 700px;

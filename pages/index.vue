@@ -36,18 +36,15 @@
       <!-- <button><font-awesome-icon class="social__content-icon" :icon="['fas', 'code']"/></button> -->
     </div>
     <section class="contenedor">
-      <Header :seccion="false"/>
+
+      <Header :seccion="false" />
+
       <div class="contenido">
         <div class="contenido__descripcion">
-          <!-- <div class="avatar"></div> -->
-          <div class="contenido__descripcion-banner">
-            <h1 class="hello">{{ $t('banner.hello') }}</h1>
-            <h2 class="titulo">{{ $t('banner.name') }}</h2>
-            <h3 class="subtitulo">{{ $t('banner.subtitle') }}</h3>
-            <!-- <h1 class="titulo">{{ $t('header.title') }}</h1> -->
-            <!-- <p>somes</p> -->
-            <p class="description">{{ $t('banner.description') }}</p>
-          </div>
+          <h1 class="hello">{{ $t('banner.hello') }}</h1>
+          <h2 class="titulo">{{ $t('banner.name') }}</h2>
+          <h3 class="subtitulo">{{ $t('banner.subtitle') }}</h3>
+          <p class="description">{{ $t('banner.description') }}</p>
         </div>
         <div class="contenido__img">
           <img class="image-carousel" src="../assets/images/devConcept.png" alt="Developer concept image">
@@ -314,6 +311,10 @@
   left: 30px;
   right: auto;
 
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -358,12 +359,17 @@
   // height: calc(100vh - 30px);
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr;
+  // display: grid;
+  // grid-template-rows: auto 1fr;
+  @media (max-width: $screen-sm) {
+    height: calc(100vh - 300px);
+    // background-color: rgba($color: red, $alpha: 0.6)
+  }
 
   .arrow {
     text-align: center;
     font-size: 2.5rem;
+    // @media (max-width: $screen-sm) { display: none }
   }
 
   .contenido {
@@ -375,39 +381,63 @@
     // align-items: start;
     margin: 8rem 12rem 0;
     // text-align: left;
-
     grid-template-columns: 1fr 350px;
     // grid-gap: 10px;
 
+    @media (max-width: $screen-sm) {
+      margin: 7rem 2rem 0;
+      // margin-top: 1rem;
+      grid-template-columns: initial;
+      position: initial;
+    }
+
     &__descripcion {
-      &-banner {
-        h1 {
-          font-size: 2rem;
-          color: #2762ba;
+      h1 {
+        font-size: 2rem;
+        color: $primary-lighter1;
+        @media (max-width: $screen-sm) {
+          font-size: 1.2rem;
         }
-  
-        h2 {
-          font-size: 6.5rem;
-          color: #0a182e;
-        }
+      }
 
-        h3 {
-          color: rgba($color: white, $alpha: 0.8);
+      h2 {
+        font-size: 6.5rem;
+        color: $primary;
+        @media (max-width: $screen-sm) {
           font-size: 5rem;
-          color: #2762ba;
         }
+      }
 
-        p {
-          margin-top: 4rem;
-          font-size: 2rem;
-          width: 60rem;
-          color: #2762ba;
+      h3 {
+        color: rgba($color: white, $alpha: 0.8);
+        font-size: 5rem;
+        color: $primary-lighter1;
+        @media (max-width: $screen-sm) {
+          font-size: 3.5rem;
+          // text-align: justify;
+        }
+      }
+
+      p {
+        margin-top: 4rem;
+        font-size: 2rem;
+        width: 60rem;
+        color: $primary-lighter;
+
+        @media (max-width: $screen-sm) {
+          width: 100%;
+          font-size: 1.8rem;
+          text-align: justify;
         }
       }
     }
 
     &__img {
       position: relative;
+
+      @media (max-width: $screen-sm) {
+        display: none;
+      }
 
       &::before {
         content: '';

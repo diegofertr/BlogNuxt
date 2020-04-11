@@ -54,6 +54,10 @@ select {
   &:focus {
     outline: none;
   }
+
+  @media (max-width: $screen-sm) {
+    font-size: 1.5rem;
+  }
 }
 
 option {
