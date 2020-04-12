@@ -224,7 +224,9 @@
               </div>
             </div>
             <div class="experience__position">
-              <h3 class="experience__title">Licenciatura en Informática mención Ingeniería de Sistemas - <a href="https://informatica.edu.bo/" target="_blank" rel="noopener">INFORMÁTICA UMSA</a></h3>
+              <h3 class="experience__title">Licenciatura en Informática mención Ingeniería de Sistemas
+              -
+              <a href="https://informatica.edu.bo/" target="_blank" rel="noopener" class="ani">INFORMÁTICA UMSA</a></h3>
             </div>
             <div class="experience__description">
               <p>
@@ -575,12 +577,12 @@
       &::before {
         content: '';
         position: absolute;
-        background: #cacaca;
+        background: #e4e4e4;
         width: 2px;
-        top: 5rem;
-        left: 21rem;
+        top: 6%;
+        left: 19%;
         right: 0;
-        bottom: 5rem;
+        bottom: 6%;
         z-index: -2;
       }
 
@@ -653,7 +655,7 @@
         bottom: -5px;
         left: -5px;
         right: -5px;
-        border: 2px solid #cacaca;
+        border: 2px solid #e4e4e4;
         border-radius: 100%;
       }
 
@@ -680,20 +682,15 @@
       }
     }
 
-    // &__panel {
-    //   margin-left: 4rem;
-    // }
-
     &__position {
       grid-area: posicion;
       margin-left: 4rem;
-
       @media (max-width: $screen-sm) { margin: 0 }
     }
 
     &__title {
-      color: $primary-light;
-      // text-align: right;
+      color: $primary;
+      a { color: $primary-light}
       @media (max-width: $screen-sm) { text-align: right; font-size: 1.8rem; }
     }
 
@@ -705,7 +702,6 @@
       @media (max-width: $screen-sm) { 
         margin: 0;
         margin-top: 1rem;
-        // font-size: 1.8rem;
       }
     }
   }
