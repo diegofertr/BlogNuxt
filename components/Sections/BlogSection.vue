@@ -4,6 +4,13 @@
       <div>
         <h2>{{ $t('writing.title') }}</h2>
         <span class="emoji-title emoji--writing"/>
+        <!-- <span class="emoji-title emoji--art"/> 
+        <span class="emoji-title emoji--thinking"/> 
+        <span class="emoji-title emoji--girl-coding"/> 
+        <span class="emoji-title emoji--nerd"/> 
+        <span class="emoji-title emoji--loved"/> 
+        <span class="emoji-title emoji--plane"/> 
+        <span class="emoji-title emoji--rock-girl"/>  -->
       </div>
     </div>
     <ul class="blogs__container">

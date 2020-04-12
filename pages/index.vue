@@ -47,7 +47,7 @@
           <p class="description">{{ $t('banner.description') }}</p>
         </div>
         <div class="contenido__img">
-          <img class="image-carousel" src="../assets/images/devConcept.png" alt="Developer concept image">
+          <img class="image-carousel" src="../assets/images/devConcept.jpg" alt="Developer concept image">
         </div>
       </div>
       <div class="arrow">
@@ -71,7 +71,7 @@
           <div class="about__content-avatar">
             <a href="https://github.com/diegofertr">
               <div class="about__content-img">
-                <img src="../assets/images/myPic.png" alt="Foto personal">
+                <img src="../assets/images/myPic.jpg" alt="Foto personal">
               </div>
             </a>
           </div>
@@ -95,7 +95,7 @@
             </div>
             <div class="experience__image" aria-label="">
               <div class="image-placeholder">
-                <img src="../assets/images/digitalboost.png" alt="Logo Digitalboost">
+                <img src="../assets/images/digitalboost.jpg" alt="Logo Digitalboost">
               </div>
             </div>
             <div class="experience__position">
@@ -143,7 +143,7 @@
             </div>
             <div class="experience__image" aria-label="">
               <div class="image-placeholder">
-                <img src="../assets/images/muserpol.png" alt="Logo Muserpol">
+                <img src="../assets/images/muserpol.jpg" alt="Logo Muserpol">
               </div>
             </div>
             <div class="experience__position">
@@ -167,7 +167,7 @@
             </div>
             <div class="experience__image" aria-label="">
               <div class="image-placeholder">
-                <img src="../assets/images/tedxumsa.png" alt="Logo TEDX UMSA">
+                <img src="../assets/images/tedxumsa.jpg" alt="Logo TEDX UMSA">
               </div>
             </div>
             <div class="experience__position">
@@ -550,7 +550,7 @@
 
           img {
             border-radius: 1rem;
-            width: 30rem;
+            width: 25rem;
 
             @media (max-width: $screen-sm) { 
               object-fit: cover;

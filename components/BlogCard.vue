@@ -11,7 +11,7 @@
       </div>
     </nuxt-link>
     <div class="blog__date" :style="`color: ${blog.color};`">
-      <small>{{ blog.year }}</small>
+      <small><font-awesome-icon class="social__content-icon" :icon="['fas', 'calendar-alt']"/> {{ blog.year }}</small>
     </div>
     <div class="blog__content">
       <h2 class="blog__title">
