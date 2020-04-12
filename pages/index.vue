@@ -461,7 +461,8 @@
     // margin-top: 20rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: calc(100vh - 350px);
+    margin-top: calc(100vh + 50px);
+    // margin-top: 100vh;
     font-size: 1.8rem;
   }
 
@@ -557,6 +558,9 @@
 
     @media (max-width: $screen-sm) {
       // grid-template-columns: initial;
+      h2 {
+        text-align: center !important;
+      }
     }
 
     &__content {
@@ -624,7 +628,11 @@
       }
     }
 
-    &__time {}
+    &__time {
+      @media (max-width: $screen-sm) {
+        font-size: 1.5rem;
+      }
+    }
 
     &__image {
       position: relative;
@@ -678,6 +686,7 @@
     &__title {
       color: $primary-light;
       // text-align: right;
+      @media (max-width: $screen-sm) { text-align: right }
     }
 
     &__description {
@@ -695,6 +704,7 @@
 
   .education {
     margin-top: 15rem;
+    text-align: center !important;
   }
 }
 
