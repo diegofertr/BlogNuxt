@@ -83,7 +83,7 @@ export default {
       li>a {
         margin: 0 10px;
         color: $primary;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding-bottom: .5rem;
 
         &:hover {

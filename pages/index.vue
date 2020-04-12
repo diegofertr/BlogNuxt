@@ -58,7 +58,8 @@
         </a>
       </div>
     </section>
-    <div class="main-section page-index nuxt-content">
+    <!-- <div class="main-section page-index nuxt-content"> -->
+    <div class="main-section">
       <section id="about" class="about">
         <h2>{{ $t('content.about.title') }}</h2>
         <div class="about__content">
@@ -97,13 +98,11 @@
                 <img src="../assets/images/digitalboost.png" alt="Logo Digitalboost">
               </div>
             </div>
-            <div class="experience__panel">
-              <div class="experience__position">
-                <h3 class="experience__title">Ingeniero de Software freelance - <a href="https://digitalboost.com.bo/" target="_blank" rel="noopener">DIGITALBOOST</a></h3>
-              </div>
-              <div class="experience__description">
-                Contribuyo con el desarrollo de diversas soluciones digitales con el objetivo de optimizar los procesos para las empresas cliente, me encargo desde la gestión, pasando por el diseño, análisis e implementación de los proyectos.
-              </div>
+            <div class="experience__position">
+              <h3 class="experience__title">Ingeniero de Software freelance - <a href="https://digitalboost.com.bo/" target="_blank" rel="noopener">DIGITALBOOST</a></h3>
+            </div>
+            <div class="experience__description">
+              Contribuyo con el desarrollo de diversas soluciones digitales con el objetivo de optimizar los procesos para las empresas cliente, me encargo desde la gestión, pasando por el diseño, análisis e implementación de los proyectos.
             </div>
           </li>
           <li class="experience__item">
@@ -121,13 +120,11 @@
                 <img src="../assets/images/agetic.jpg" alt="Logo Agetic">
               </div>
             </div>
-            <div class="experience__panel">
-              <div class="experience__position">
-                <h3 class="experience__title">Consultor en Desarrollo de Sistemas - <a href="https://agetic.gob.bo/#/" target="_blank" rel="noopener">AGETIC</a></h3>
-              </div>
-              <div class="experience__description">
-                Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
-              </div>
+            <div class="experience__position">
+              <h3 class="experience__title">Consultor en Desarrollo de Sistemas - <a href="https://agetic.gob.bo/#/" target="_blank" rel="noopener">AGETIC</a></h3>
+            </div>
+            <div class="experience__description">
+              Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
             </div>
           </li>
           <li class="experience__item">
@@ -145,13 +142,11 @@
                 <img src="../assets/images/muserpol.png" alt="Logo Muserpol">
               </div>
             </div>
-            <div class="experience__panel">
-              <div class="experience__position">
-                <h3 class="experience__title">Pasante en Desarrollo de Software - <a href="http://www.muserpol.gob.bo/" target="_blank" rel="noopener">MUSERPOL</a></h3>
-              </div>
-              <div class="experience__description">
-                Colaboré con el desarrollo de la plataforma institucional para gestión de jubilaciones de los policías, con el objetivo de reducir los trámites y dar una mejor atención a los policías.
-              </div>
+            <div class="experience__position">
+              <h3 class="experience__title">Pasante en Desarrollo de Software - <a href="http://www.muserpol.gob.bo/" target="_blank" rel="noopener">MUSERPOL</a></h3>
+            </div>
+            <div class="experience__description">
+              Colaboré con el desarrollo de la plataforma institucional para gestión de jubilaciones de los policías, con el objetivo de reducir los trámites y dar una mejor atención a los policías.
             </div>
           </li>
           <li class="experience__item">
@@ -169,13 +164,11 @@
                 <img src="../assets/images/tedxumsa.png" alt="Logo TEDX UMSA">
               </div>
             </div>
-            <div class="experience__panel">
-              <div class="experience__position">
-                <h3 class="experience__title">Desarrollador Fullstack - <a href="https://www.ted.com/tedx/events/20177" target="_blank" rel="noopener">TEDXUMSA</a></h3>
-              </div>
-              <div class="experience__description">
-                TED es un evento global en donde se reúnen distintas personalidades que exponen y comparten las ideas que están transformando al mundo. Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
-              </div>
+            <div class="experience__position">
+              <h3 class="experience__title">Desarrollador Fullstack - <a href="https://www.ted.com/tedx/events/20177" target="_blank" rel="noopener">TEDXUMSA</a></h3>
+            </div>
+            <div class="experience__description">
+              TED es un evento global en donde se reúnen distintas personalidades que exponen y comparten las ideas que están transformando al mundo. Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
             </div>
           </li>
           <li class="experience__item">
@@ -193,13 +186,11 @@
                 <img src="../assets/images/agetic.jpg" alt="Logo Agetic">
               </div>
             </div>
-            <div class="experience__panel">
-              <div class="experience__position">
-                <h3 class="experience__title">Pasante en Investigación de Software - <a href="https://agetic.gob.bo/#/" target="_blank" rel="noopener">AGETIC</a></h3>
-              </div>
-              <div class="experience__description">
-                Colaboré con la investigación de nuevas tecnologías para desarrollo web, uso de nuevos frameworks de javascript así como también el uso de nuevos gestores de base de datos, también aprendí los inicios de docker para el manejo de contenedores.
-              </div>
+            <div class="experience__position">
+              <h3 class="experience__title">Pasante en Investigación de Software - <a href="https://agetic.gob.bo/#/" target="_blank" rel="noopener">AGETIC</a></h3>
+            </div>
+            <div class="experience__description">
+              Colaboré con la investigación de nuevas tecnologías para desarrollo web, uso de nuevos frameworks de javascript así como también el uso de nuevos gestores de base de datos, también aprendí los inicios de docker para el manejo de contenedores.
             </div>
           </li>
         </ul>
@@ -222,13 +213,11 @@
                 <img src="../assets/images/informatica.jpg" alt="Logo Carrera de Informática">
               </div>
             </div>
-            <div class="experience__panel">
-              <div class="experience__position">
-                <h3 class="experience__title">Licenciatura en Informática mención Ingeniería de Sistemas - <a href="https://informatica.edu.bo/" target="_blank" rel="noopener">INFORMÁTICA UMSA</a></h3>
-              </div>
-              <div class="experience__description">
-                Estudié mi profesión como informático en la Universidad Mayor de San Andrés, la de mejor prestigio en Bolivia. 
-              </div>
+            <div class="experience__position">
+              <h3 class="experience__title">Licenciatura en Informática mención Ingeniería de Sistemas - <a href="https://informatica.edu.bo/" target="_blank" rel="noopener">INFORMÁTICA UMSA</a></h3>
+            </div>
+            <div class="experience__description">
+              Estudié mi profesión como informático en la Universidad Mayor de San Andrés, la de mejor prestigio en Bolivia. 
             </div>
           </li>
         </ul>
@@ -379,7 +368,7 @@
     position: relative;
     // justify-items: ;
     // align-items: start;
-    margin: 8rem 12rem 0;
+    margin: 12rem 12rem 3rem;
     // text-align: left;
     grid-template-columns: 1fr 350px;
     // grid-gap: 10px;
@@ -392,6 +381,12 @@
     }
 
     &__descripcion {
+      width: 80rem;
+
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
+
       h1 {
         font-size: 2rem;
         color: $primary-lighter1;
@@ -421,11 +416,10 @@
       p {
         margin-top: 4rem;
         font-size: 2rem;
-        width: 60rem;
         color: $primary-lighter;
 
         @media (max-width: $screen-sm) {
-          width: 100%;
+          // width: 100%;
           font-size: 1.8rem;
           text-align: justify;
         }
@@ -460,58 +454,96 @@
 
 .main-section {
   padding: 3rem 12rem 0;
+  font-size: 2rem;
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+    // margin-top: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: calc(100vh - 350px);
+    font-size: 1.8rem;
+  }
 
   // About section
   .about {
-    // position: relative;
-
-    // &__title {
-    //   color: $primary;
-    // }
+    @media (max-width: $screen-sm) {
+      text-align: center;
+    }
 
     &__content {
       margin-top: 3rem;
       display: grid;
-      grid-template-columns: 1fr 400px;
-      // justify-content: space-between;
-      // align-items: flex-start;
-      // position: relative;
+      grid-template-areas: "descripcion avatar";
+      grid-template-columns: 1fr 40rem;
+      // justify-content: space-around;
+
+      @media (max-width: $screen-sm) {
+        grid-template-columns: initial;
+        grid-template-areas: "avatar"
+                             "descripcion";
+      }
 
       &-description {
-        font-size: 21px;
+        grid-area: descripcion;
+        // font-size: 2.1rem;
         color: $primary-light;
         text-align: justify;
         color: #767676;
+
+        @media (max-width: $screen-sm) {
+          margin-top: 3.5rem;
+          font-size: 1.8rem;
+        }
       }
 
       &-avatar {
+        grid-area: avatar;
         display: grid;
         justify-content: center;
+        position: relative;
+        // width: 40rem;
+
+        @media (max-width: $screen-sm) {
+          // width: 100%;
+        }
 
         .about__content-img {
           position: relative;
+          border-radius: 1rem;
 
           &::after {
             content: '';
             display: block;
             border-bottom: 2px solid $primary-light;
             border-right: 2px solid $primary-light;
-            border-radius: 10px;
+            border-radius: 1rem;
+            // border-radius: 100%;
             position: absolute;
-            top: 15px;
-            left: 15px;
-            bottom: -10px;
-            right: -10px;
+            top: 2rem;
+            left: 2rem;
+            bottom: -1rem;
+            right: -1rem;
+          }
+
+          @media (max-width: $screen-sm) { 
+            // position: initial;
+            border-radius: 100%;
+            &::after {
+              display: none;
+            }
           }
 
           img {
-            border-radius: 10px;
-            width: 300px;
-            // position: absolute;
-            // top: 0;
-            // bottom: 0;
-            // left: 0;
-            // right: 0;
+            border-radius: 1rem;
+            width: 30rem;
+
+            @media (max-width: $screen-sm) { 
+              object-fit: cover;
+              width: 20rem;
+              border-radius: 100%;
+              border: 3px dotted $primary;
+            }
           }
         }
       }
@@ -523,6 +555,10 @@
   .experience {
     margin-top: 10rem;
 
+    @media (max-width: $screen-sm) {
+      // grid-template-columns: initial;
+    }
+
     &__content {
       margin-top: 5rem;
       position: relative;
@@ -532,24 +568,46 @@
         position: absolute;
         background: #cacaca;
         width: 2px;
-        top: 0;
-        left: 20rem;
+        top: 1.5rem;
+        left: 24rem;
         right: 0;
-        bottom: 0;
+        bottom: 1.5rem;
+      }
+
+      @media (max-width: $screen-sm) {
+        &::before { display: none }
       }
     }
 
     &__item {
       display: grid;
-      grid-template-columns: 12% 8% 80%;
+      grid-template-columns: 15% 8% 77%;
+      grid-template-rows: repeat(2,1fr);
+      grid-template-areas: "placetime imagen posicion"
+                           "placetime imagen descripcion";
       justify-content: flex-start;
       align-items: center;
-      grid-gap: 20px;
+      // grid-gap: 20px;
       margin-bottom: 7rem;
+
+      @media (max-width: $screen-sm) {
+        // border-top: 1px dashed $primary;
+        padding-top: 1rem;
+        grid-template-columns: initial;
+        grid-template-rows: initial;
+        grid-template-areas: "placetime placetime"
+                             "imagen posicion"
+                             "descripcion descripcion";
+      }
     }
 
     &__place-time {
-      // background: rgba($color: red, $alpha: 0.2);
+      grid-area: placetime;
+
+      @media (max-width: $screen-sm) {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     &__now {
@@ -561,14 +619,16 @@
       color: $primary-darken;
       font-size: 1.8rem;
       margin-bottom: 8px;
+      @media (max-width: $screen-sm) {
+        font-size: 1.5rem;
+      }
     }
 
-    &__time {
-
-    }
+    &__time {}
 
     &__image {
       position: relative;
+      grid-area: imagen;
 
       &::after {
         content: '';
@@ -581,32 +641,55 @@
         border-radius: 100%;
       }
 
+      @media (max-width: $screen-sm) {
+        &::after {
+          display: none
+        }
+      }
+
       .image-placeholder {
-        display: grid;
-        justify-content: center;
+        display: flex;
+        align-items: center;
 
         img {
           border-radius: 100%;
           border: 2px solid #cacaca;
           width: 100%;
           height: auto;
+
+          @media (max-width: $screen-sm) {
+            width: 65px;
+          }
         }
       }
     }
 
-    &__panel {
-      margin-left: 10px;
-    }
+    // &__panel {
+    //   margin-left: 4rem;
+    // }
 
     &__position {
+      grid-area: posicion;
+      margin-left: 4rem;
+
+      @media (max-width: $screen-sm) { margin: 0 }
     }
 
     &__title {
       color: $primary-light;
+      // text-align: right;
     }
 
     &__description {
+      grid-area: descripcion;
+      margin-left: 4rem;
       text-align: justify;
+
+      @media (max-width: $screen-sm) { 
+        margin: 0;
+        margin-top: 1rem;
+        // font-size: 1.8rem;
+      }
     }
   }
 
