@@ -81,7 +81,7 @@
         <!-- <BlogSection :blogs="blogs"/> -->
       </section>
       <section class="experience">
-        <h2>Experiencia de Trabajo</h2>
+        <h2>Experiencia</h2>
         <ul class="experience__content">
           <li class="experience__item">
             <div class="experience__place-time">
@@ -102,7 +102,9 @@
               <h3 class="experience__title">Ingeniero de Software freelance - <a href="https://digitalboost.com.bo/" target="_blank" rel="noopener">DIGITALBOOST</a></h3>
             </div>
             <div class="experience__description">
-              Contribuyo con el desarrollo de diversas soluciones digitales con el objetivo de optimizar los procesos para las empresas cliente, me encargo desde la gestión, pasando por el diseño, análisis e implementación de los proyectos.
+              <p>
+                Contribuyo con el desarrollo de diversas soluciones digitales con el objetivo de optimizar los procesos para las empresas cliente, me encargo desde la gestión, pasando por el diseño, análisis e implementación de los proyectos.
+              </p>
             </div>
           </li>
           <li class="experience__item">
@@ -124,7 +126,9 @@
               <h3 class="experience__title">Consultor en Desarrollo de Sistemas - <a href="https://agetic.gob.bo/#/" target="_blank" rel="noopener">AGETIC</a></h3>
             </div>
             <div class="experience__description">
-              Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
+              <p>
+                Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
+              </p>
             </div>
           </li>
           <li class="experience__item">
@@ -146,7 +150,9 @@
               <h3 class="experience__title">Pasante en Desarrollo de Software - <a href="http://www.muserpol.gob.bo/" target="_blank" rel="noopener">MUSERPOL</a></h3>
             </div>
             <div class="experience__description">
-              Colaboré con el desarrollo de la plataforma institucional para gestión de jubilaciones de los policías, con el objetivo de reducir los trámites y dar una mejor atención a los policías.
+              <p>
+                Colaboré con el desarrollo de la plataforma institucional para gestión de jubilaciones de los policías, con el objetivo de reducir los trámites y dar una mejor atención a los policías.
+              </p>
             </div>
           </li>
           <li class="experience__item">
@@ -168,7 +174,9 @@
               <h3 class="experience__title">Desarrollador Fullstack - <a href="https://www.ted.com/tedx/events/20177" target="_blank" rel="noopener">TEDXUMSA</a></h3>
             </div>
             <div class="experience__description">
-              TED es un evento global en donde se reúnen distintas personalidades que exponen y comparten las ideas que están transformando al mundo. Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
+              <p>
+                TED es un evento global en donde se reúnen distintas personalidades que exponen y comparten las ideas que están transformando al mundo. Colaboré con el desarrollo de sistemas de gobierno electrónico orientados a la simplificación de trámites, apoyando tanto en la parte del backend como frontend de cada proyecto desarrollado.
+              </p>
             </div>
           </li>
           <li class="experience__item">
@@ -190,7 +198,9 @@
               <h3 class="experience__title">Pasante en Investigación de Software - <a href="https://agetic.gob.bo/#/" target="_blank" rel="noopener">AGETIC</a></h3>
             </div>
             <div class="experience__description">
-              Colaboré con la investigación de nuevas tecnologías para desarrollo web, uso de nuevos frameworks de javascript así como también el uso de nuevos gestores de base de datos, también aprendí los inicios de docker para el manejo de contenedores.
+              <p>
+                Colaboré con la investigación de nuevas tecnologías para desarrollo web, uso de nuevos frameworks de javascript así como también el uso de nuevos gestores de base de datos, también aprendí los inicios de docker para el manejo de contenedores.
+              </p>
             </div>
           </li>
         </ul>
@@ -217,7 +227,9 @@
               <h3 class="experience__title">Licenciatura en Informática mención Ingeniería de Sistemas - <a href="https://informatica.edu.bo/" target="_blank" rel="noopener">INFORMÁTICA UMSA</a></h3>
             </div>
             <div class="experience__description">
-              Estudié mi profesión como informático en la Universidad Mayor de San Andrés, la de mejor prestigio en Bolivia. 
+              <p>
+                Estudié mi profesión como informático en la Universidad Mayor de San Andrés, la de mejor prestigio en Bolivia. 
+              </p>
             </div>
           </li>
         </ul>
@@ -420,7 +432,7 @@
 
         @media (max-width: $screen-sm) {
           // width: 100%;
-          font-size: 1.8rem;
+          font-size: 1.5rem;
           text-align: justify;
         }
       }
@@ -430,18 +442,22 @@
       position: relative;
 
       @media (max-width: $screen-sm) {
-        display: none;
+        margin-top: -30rem;
+        z-index: -1;
       }
 
       &::before {
         content: '';
         width: 100%;
         height: 100%;
-        background: rgba($color: white, $alpha: 0.6);
+        background: rgba(255, 255, 255, .6);
         position: absolute;
         left: 0;
         top: 0;
         z-index: 10;
+        @media (max-width: $screen-sm) {
+          background: rgba(255, 255, 255, .8);
+        }
       }
 
       img {
@@ -463,7 +479,7 @@
     margin-right: 2rem;
     margin-top: calc(100vh + 50px);
     // margin-top: 100vh;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   // About section
@@ -494,7 +510,7 @@
 
         @media (max-width: $screen-sm) {
           margin-top: 3.5rem;
-          font-size: 1.8rem;
+          // font-size: 1.8rem;
         }
       }
 
@@ -513,6 +529,8 @@
           position: relative;
           border-radius: 1rem;
 
+          @media (max-width: $screen-sm) { border-radius: 100% }
+
           &::after {
             content: '';
             display: block;
@@ -525,14 +543,7 @@
             left: 2rem;
             bottom: -1rem;
             right: -1rem;
-          }
-
-          @media (max-width: $screen-sm) { 
-            // position: initial;
-            border-radius: 100%;
-            &::after {
-              display: none;
-            }
+            @media (max-width: $screen-sm) { display: none }
           }
 
           img {
@@ -541,9 +552,9 @@
 
             @media (max-width: $screen-sm) { 
               object-fit: cover;
-              width: 20rem;
+              width: 15rem;
               border-radius: 100%;
-              border: 3px dotted $primary;
+              border: 2px dashed $primary;
             }
           }
         }
@@ -555,16 +566,10 @@
 
   .experience {
     margin-top: 10rem;
-
-    @media (max-width: $screen-sm) {
-      // grid-template-columns: initial;
-      h2 {
-        text-align: center !important;
-      }
-    }
+    @media (max-width: $screen-sm) { text-align: center }
 
     &__content {
-      margin-top: 5rem;
+      // margin-top: 5rem;
       position: relative;
 
       &::before {
@@ -572,10 +577,11 @@
         position: absolute;
         background: #cacaca;
         width: 2px;
-        top: 1.5rem;
-        left: 24rem;
+        top: 5rem;
+        left: 21rem;
         right: 0;
-        bottom: 1.5rem;
+        bottom: 5rem;
+        z-index: -2;
       }
 
       @media (max-width: $screen-sm) {
@@ -641,6 +647,8 @@
       &::after {
         content: '';
         position: absolute;
+        background: white;
+        z-index: -1;
         top: -5px;
         bottom: -5px;
         left: -5px;
@@ -666,7 +674,7 @@
           height: auto;
 
           @media (max-width: $screen-sm) {
-            width: 65px;
+            width: 60px;
           }
         }
       }
@@ -686,7 +694,7 @@
     &__title {
       color: $primary-light;
       // text-align: right;
-      @media (max-width: $screen-sm) { text-align: right }
+      @media (max-width: $screen-sm) { text-align: right; font-size: 1.8rem; }
     }
 
     &__description {
@@ -704,7 +712,7 @@
 
   .education {
     margin-top: 15rem;
-    text-align: center !important;
+    text-align: center;
   }
 }
 

@@ -43,13 +43,13 @@ body {
   }
 }
 
-p,ul,ol,blockquote,.content-block{
+// p,ul,ol,blockquote,.content-block{
+p,ol,blockquote,.content-block{
   margin-top: 0;
   margin-bottom: 2.4rem;
   @include content-blocks{
     margin-top: 1em;
   }
-
 }
 
 .title {

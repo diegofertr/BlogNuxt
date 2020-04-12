@@ -5,15 +5,27 @@
         <img src="../../assets/images/logo-diego.svg" class="hero__logo" alt="logo-principal">
       </nuxt-link>
       <nav class="hero__nav">
-        <ul>
-          <li>
-            <nuxt-link :to="localePath({ name: 'blog'})">{{ $t('header.menu.writing') }}</nuxt-link>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <nuxt-link :to="localePath({ name: 'blog'})" class="ani">
+              <span>
+                {{ $t('header.menu.writing') }}
+              </span>
+            </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="localePath({ name: 'portfolio'})">{{ $t('header.menu.projects') }}</nuxt-link>
+            <nuxt-link :to="localePath({ name: 'portfolio'})" class="ani">
+              <span>
+                {{ $t('header.menu.projects') }}
+              </span>
+            </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="localePath({ name: 'contact'})">{{ $t('header.menu.contact') }}</nuxt-link>
+            <nuxt-link :to="localePath({ name: 'contact'})" class="ani">
+              <span>
+                {{ $t('header.menu.contact') }}
+              </span>
+            </nuxt-link>
           </li>
           <li>
             <LangSwitcher />
@@ -71,7 +83,7 @@ export default {
     width: 5rem;
 
     @media (max-width: $screen-sm) {
-      width: 2.5rem;
+      width: 3rem;
     }
   }
 
@@ -79,23 +91,34 @@ export default {
     ul {
       display: flex;
       align-items: center;
+      // margin-top: 10px;
+      @media (max-width: $screen-sm) { margin-top: 0 }
 
       li>a {
-        margin: 0 10px;
-        color: $primary;
-        font-size: 1.8rem;
-        padding-bottom: .5rem;
-
-        &:hover {
-          border-bottom: 2px solid $primary-light;
-        }
+        // margin: 0 10px;
+        padding: 10px;
+        font-size: 1.5rem;
 
         &.nuxt-link-active{
-          color: $primary;
+          color: $primary-lighter;
+          // background-image: linear-gradient(to top right, rgba($color: $primary-lighter, $alpha: .1), transparent);
+          border-radius: .5rem;
           font-weight: bold;
-          // border-bottom: 2px solid $primary-light;
         }
       }
+
+      // li>a {
+      //   margin: 0 10px;
+      //   color: $primary;
+      //   font-size: 1.5rem;
+      //   padding-bottom: .5rem;
+      //   // border-bottom: none;
+      //   transition: border-bottom 2s;
+
+      //   &:hover {
+      //     border-bottom: 2px solid $primary-light;
+      //   }
+      // }
     }
   }
 }

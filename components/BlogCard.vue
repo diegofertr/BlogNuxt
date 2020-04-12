@@ -48,16 +48,14 @@ export default {
 
 <style lang="scss">
 .cardThumbnail {
-  // display: block;
-  margin-left: auto;
-  margin-right: auto;
-  // width: 50%;
-  // border-radius: 10px;
+  // margin-left: auto;
+  // margin-right: auto;
   width: 100%;
-  height: 200px;
+  height: 20rem;
 
   &[lazy='loaded'] {
     opacity: 1;
+    border-radius: 1rem;
   }
 }
 
