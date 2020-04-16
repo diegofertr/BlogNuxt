@@ -134,9 +134,7 @@ module.exports = {
   webfontloader: {
     custom: {
       families: [
-        'Graphik',
         'Rajdhani',
-        'Tiempos Headline',
         'Nunito'
       ],
       urls: ['/fonts/fonts.css']

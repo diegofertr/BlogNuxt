@@ -5,6 +5,7 @@ year: 15 de Diciembre de 2019
 color: '#8e7964'
 trans: '10-best-es6-features'
 id: 'es6-best-features'
+cardAlt: 'Imagen de 10 mejores características de ES6'
 description: |
   Acá está, según mi criterio, una lista de las 10 mejores características que se introdujeron en es6, el nuevo estándar de javascript.
 ---

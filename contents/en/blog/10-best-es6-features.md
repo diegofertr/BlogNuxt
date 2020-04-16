@@ -5,6 +5,7 @@ year: 15 December 2019
 color: '#8e7964'
 trans: '10-mejores-caracteristicas-es6'
 id: 'es6-best-features'
+cardAlt: 'Image of 10 top best features of ecmascript6'
 description: |
   Here is in my opinion a list of the 10 best features that were introduced in es6 the new javascript standard.
 ---

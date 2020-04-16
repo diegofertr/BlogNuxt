@@ -5,6 +5,7 @@ year: 16 de Febrero de 2020
 color: '#8e7964'
 # trans: '10-best-es6-features'
 id: 'js-functional'
+cardAlt: 'Imagen de Javascript funcional'
 description: |
   Vamos a estar viendo en 3 partes las diferentes aplicaciones de un paradigma de programación como es la programación funcional aplicado a javascript.
 ---

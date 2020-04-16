@@ -117,6 +117,8 @@
 
     p {
       font-size: 2rem;
+      color: #fff;
+      opacity: .8;
 
       @media (max-width: $screen-sm) {
         font-size: 1.5rem;

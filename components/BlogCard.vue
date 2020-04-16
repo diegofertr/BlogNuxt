@@ -10,7 +10,7 @@
           :alt="blog.cardAlt" /> 
       </div>
     </nuxt-link>
-    <div class="blog__date" :style="`color: ${blog.color};`">
+    <div class="blog__date">
       <small><font-awesome-icon class="social__content-icon" :icon="['fas', 'calendar-alt']"/> {{ blog.year }}</small>
     </div>
     <div class="blog__content">
@@ -96,6 +96,7 @@ export default {
   &__date {
     padding-left: 10px;
     padding-top: 5px;
+    color: $primary-light;
   }
 
   &__content {

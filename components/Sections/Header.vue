@@ -66,7 +66,7 @@
       <nuxt-link :to="localePath('index')" class="hero__nav-logo">
         <img src="../../assets/images/loguito.png" class="hero-logo" alt="Logo principal">
       </nuxt-link>
-      <button @click="openNav()">
+      <button @click="openNav()" aria-label="Abrir menú principal">
         <font-awesome-icon class="social__content-icon" :icon="['fas', 'bars']"/>
       </button>
     </div>
@@ -97,7 +97,7 @@
         <!-- <li>
         </li> -->
       </ul>
-      <button @click="openNav()">
+      <button @click="openNav()" aria-label="Cerrar menu">
         <font-awesome-icon class="social__content-icon" :icon="['fas', 'times']"/>
       </button>
     </nav>

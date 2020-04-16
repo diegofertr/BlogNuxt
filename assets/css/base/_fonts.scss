@@ -1,11 +1,12 @@
 // Fonts Definition
 $fontRajdhani: 'Rajdhani';
-$fontGraphik: 'Graphik';
+// $fontGraphik: 'Graphik';
 $fontNunito: 'Nunito';
 
 $font-base-color:             $grey-2;
-$font-family-base:            $fontGraphik, Arial, sans-serif;
-$font-family-blog:            'Tiempos Headline', Arial, sans-serif;
+$font-family-base:            $fontRajdhani, Arial, sans-serif;
+// $font-family-blog:            'Tiempos Headline', Arial, sans-serif;
+$font-family-blog:            $fontNunito, Arial, sans-serif;
 $line-height-base:            1.1;
 $fs-base:                     1.6rem;
 $fs-base-responsive:          1.4rem;
