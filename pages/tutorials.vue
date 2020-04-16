@@ -1,8 +1,7 @@
 <template>
   <div class="page-index">
     <div class="container">
-      <h1>{{ $t('profile.title') }}</h1><br>
-      <h3>{{ $t('profile.profession') }}</h3>
+      <h1>{{ $t('tutorials.title') }}</h1><br>
       <!-- <BlogSection :blogs="blogs"/> -->
     </div>
   </div>

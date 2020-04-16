@@ -41,7 +41,5 @@ export default {
 </script>
 
 <style lang="scss">
-.page-index {
-  margin-top: 3rem;
-}
+// .page-index { margin-top: 3rem }
 </style>

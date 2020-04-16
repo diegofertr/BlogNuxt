@@ -10,40 +10,27 @@ export default {
     title: "Hello, I'm Diego F. Ticona Ramos",
     menu: {
       home: 'Home',
-      writing: 'Writing',
-      projects: 'Projects',
-      about: 'About',
-      contact: 'Contact'
+      articles: 'Articles',
+      tutorials: 'Tutorials',
+      projects: 'Projects'
     },
     profession: 'Frontend developer, passionate about video game development',
     slogan: 'Design, Development and Implementation of dynamic solutions.'
   },
   banner: {
-    hello: 'Hi, my name is',
-    name: 'Diego F. Ticona Ramos',
-    subtitle: "I develop digital solutions for the web",
-    description: "I'm a software engineer based in La Paz, Bolivia. Specialized in building and designing exceptional, high-quality websites and applications."
+    title: 'Hello! I am Diego, a software engineer.',
+    description: 'Here I share everything I do. Tutorials, code and more.'
   },
-  posts: 'Posts',
-  profile: {
-    title: "Hello, I'm Diego F. Ticona Ramos",
-    profession: 'Frontend developer, passionate about video game development',
+  articles: {
+    title: 'Articles'
   },
-  writing: {
-    title: 'Writing'
+  tutorials: {
+    title: 'Tutorials'
   },
-  portfolio: {
+  projects: {
     title: 'Personal projects'
   },
-  contact: {
-    title: 'Contact Form'
-  },
+  posts: 'Posts',
   home: 'Home',
-  footer: footer,
-  content: {
-    about: {
-      title: 'About me',
-      description: "Hi! I'm a Web Developer",
-    }
-  }
+  footer: footer
 }

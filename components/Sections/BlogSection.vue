@@ -2,7 +2,7 @@
   <section class="blogs">
     <div class="blogs__top">
       <div>
-        <h2>{{ $t('writing.title') }}</h2>
+        <h2>{{ $t('posts') }}</h2> 
         <span class="emoji-title emoji--writing"/>
         <!-- <span class="emoji-title emoji--art"/> 
         <span class="emoji-title emoji--thinking"/> 

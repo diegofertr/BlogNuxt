@@ -1,7 +1,8 @@
 <template>
   <div class="page-index">
     <div class="container">
-      {{ $t('portfolio.title') }}
+      <h1>{{ $t('projects.title') }}</h1><br>
+      <!-- <BlogSection :blogs="blogs"/> -->
     </div>
   </div>
 </template>
@@ -12,4 +13,6 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  
+</style>

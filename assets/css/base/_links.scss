@@ -19,10 +19,14 @@ a {
 
   &.ani {
     text-decoration: none;
+    color: #fff;
+    opacity: .8;
+    font-weight: bold;
     &:hover,
     &.active,
     &:focus{
-      color: $primary-light;
+      // color: $primary-light;
+      opacity: initial;
     }
     span {
       display: inline-block;
@@ -32,9 +36,12 @@ a {
         display: block;
         position: absolute;
         height: 1.5px;
-        bottom: .4px;
+        // bottom: .4px;
+        bottom: -.8rem;
         width: 0;
-        background-color: $primary-light;
+        // background-color: $primary-light;
+        background-color: #fff;
+        opacity: .8;
         -webkit-transition-property: width;
         -moz-transition-property: width;
         -o-transition-property: width;
