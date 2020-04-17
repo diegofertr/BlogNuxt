@@ -15,7 +15,7 @@
     </div>
     <div class="blog__content">
       <h2 class="blog__title">
-        <nuxt-link :to="localePath({ name: 'blog-slug', params: { slug: blog.name }})">
+        <nuxt-link :to="localePath({ name: 'tutorial-slug', params: { slug: blog.name }})">
           {{ blog.title }}
         </nuxt-link>
       </h2>

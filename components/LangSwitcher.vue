@@ -43,8 +43,8 @@ export default {
       this.$router.push(this.switchLocalePath(this.selected));
     },
     changeLanguage () {
-      console.log(this.englishLanguage);
-      console.log(this.$i18n.locales);
+      // console.log(this.englishLanguage);
+      // console.log(this.$i18n.locales);
       this.$router.push(this.switchLocalePath(this.englishLanguage ? 'en' : 'es'));
     }
   }

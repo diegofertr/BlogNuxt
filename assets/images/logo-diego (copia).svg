@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="240mm"
+   viewBox="0 0 200 240"
+   version="1.1"
+   id="svg1410"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo-diego (copia).svg"
+   inkscape:export-filename="/home/dev/loguito.png"
+   inkscape:export-xdpi="157.10378"
+   inkscape:export-ydpi="157.10378">
+  <defs
+     id="defs1404" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="500.67868"
+     inkscape:cy="493.81294"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="714"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1407">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-57)">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:11.12199974;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:0.8"
+       d="m 55.110435,225.94999 34.663483,-18.11061 v -22.28447 l -71.338312,38.80759 70.96128,34.27509 0.277528,19.87831 -70.179658,-32.92724"
+       id="path4756-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="opacity:0.8;fill:none;stroke:#ffffff;stroke-width:11.9361639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 118.45556,269.25097 21.79191,-115.27581 m 5.86991,-22.31623 4.65365,-29.76143 -17.13595,-26.222171 -29.22446,161.317801"
+       id="path4773-6"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-5.9003794"
+       inkscape:transform-center-y="7.7255752"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:11.9361639;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.8"
+       d="m 146.11738,131.65893 h 18.73466"
+       id="path2000"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:11.9361639;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.8"
+       d="m 140.24747,153.97516 h 38.11464"
+       id="path2000-8"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

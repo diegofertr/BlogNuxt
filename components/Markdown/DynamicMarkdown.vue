@@ -36,7 +36,21 @@
     },
 
     render (createElement) {
-      return this.templateRender ? this.templateRender() : createElement("div", "Rendering");
+      // if (typeof this.templateRender === 'function') {
+        //   console.log('3.- [RENDER] {funcion} ')
+      //   console.log(typeof this.templateRender)
+      //   return this.templateRender()
+      // } else {
+        //   console.log('Refrescando la ruta => ')
+        //   console.log('IDIOMA :: ', this.$i18n.locale)
+        // const fileContentTemp = await import(`~/contents/${this.$i18n.locale}${this.$router.currentRoute.path}.md`)
+        // this.templateRender = fileContentTemp.vue.render
+        // this.$options.staticRenderFns = fileContentTemp.vue.staticRenderFns
+      // }
+      return typeof this.templateRender === 'function' ? this.templateRender() : createElement("div", "Rendering")
+      // return this.templateRender()
+
+      // return typeof this.templateRender === 'function' ? this.templateRender() : this.$router.push(this.localePath('index'))
     },
 
     created () {

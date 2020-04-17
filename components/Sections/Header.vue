@@ -16,7 +16,7 @@
                 </nuxt-link>
               </li>
               <li class="nav-item">
-                <nuxt-link :to="localePath({ name: 'tutorials'})" class="ani">
+                <nuxt-link :to="localePath({ name: 'tutorial'})" class="ani">
                   <span>
                     {{ $t('header.menu.tutorials') }}
                   </span>
@@ -81,7 +81,7 @@
           </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link :to="localePath({ name: 'tutorials'})" class="ani">
+          <nuxt-link :to="localePath({ name: 'tutorial'})" class="ani">
             <span>
               {{ $t('header.menu.tutorials') }}
             </span>
