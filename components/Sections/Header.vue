@@ -9,7 +9,7 @@
           <div class="hero__nav-content">
             <ul class="nav-list">
               <li class="nav-item">
-                <nuxt-link :to="localePath({ name: 'articles'})" class="ani">
+                <nuxt-link :to="localePath({ name: 'article'})" class="ani">
                   <span>
                     {{ $t('header.menu.articles') }}
                   </span>
@@ -74,7 +74,7 @@
       <LangSwitcher />
       <ul class="nav-list">
         <li class="nav-item">
-          <nuxt-link :to="localePath({ name: 'articles'})" class="ani">
+          <nuxt-link :to="localePath({ name: 'article'})" class="ani">
             <span>
               {{ $t('header.menu.articles') }}
             </span>

@@ -31,7 +31,7 @@
           </div>
         </div>
         <ImageResponsive
-          :imageURL="'blog/' + id + '/_main.jpg'"
+          :imageURL="`${category}/${id}/_main.jpg`"
           v-if="!noMainImage"
           width="100%"
           class="elevate-cover__img"
@@ -43,12 +43,6 @@
       </div>
     </div>
     <div class="container small">
-      <!-- <no-ssr>
-        <DynamicMarkdown
-          :render-func="renderFunc"
-          :static-render-funcs="staticRenderFuncs"
-          :extra-component="extraComponent"></DynamicMarkdown>
-      </no-ssr> -->
       <client-only>
         <DynamicMarkdown
           :render-func="renderFunc"
@@ -73,6 +67,7 @@
       return {
         name: params.slug,
         title: attr.title,
+        category: attr.category,
         trans: attr.trans,
         year: attr.year,
         id: attr.id,
@@ -125,7 +120,7 @@
 
     computed: {
       ogImage () {
-        return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`;
+        return `${process.env.baseUrl}/images/tutorial/${this.id}/_thumbnail.jpg`;
       },
       pageTitle () {
         return this.title + ' – Diego F. Ticona Ramos';
@@ -140,7 +135,7 @@
         return {
           hid: 'alternate-hreflang-' + this.showLocales[0].iso,
           rel: 'alternate',
-          href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
+          href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/es')}/tutorial/${this.trans}`,
           hreflang: this.showLocales[0].code
         }
       },
@@ -149,7 +144,7 @@
         if (!this.extraComponent) {
           return null
         }
-        return () => import(`~/components/blog/${this.extraComponent}.vue`)
+        return () => import(`~/components/blog/${this.extraComponent}.vue`)// analizar funcionalidad
       }
     }
   }

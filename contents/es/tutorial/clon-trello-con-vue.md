@@ -3,6 +3,7 @@ name: 'clon-trello-con-vue'
 title: Clon de Trello con Vue
 year: 16 de Abril de 2020
 color: 'green'
+category: 'tutorial'
 trans: 'clon-trello-with-vue'
 id: 'trello-vue'
 cardAlt: 'Imagen de Clon de Trello con Vue'

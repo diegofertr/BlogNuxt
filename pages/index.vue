@@ -10,9 +10,8 @@
       </div>
     </section>
     <div class="container">
-      <!-- <div class="main-section"> -->
       <div class="page-index nuxt-content">
-        <BlogSection :blogs="blogs" tipo="blog" />
+        <BlogSection :blogs="posts" />
       </div>
     </div>
   </div>
@@ -22,25 +21,32 @@
   import BlogSection from "~/components/Sections/BlogSection"
   import Header from '~/components/Sections/Header'
 
-  import blogsEn from '~/contents/en/blogsEn.js'
-  import blogsEs from '~/contents/es/blogsEs.js'
+  import articlesEn from '~/contents/en/articlesEn.js'
+  import articlesEs from '~/contents/es/articlesEs.js'
+
+  import tutorialsEn from '~/contents/en/tutorialsEn.js'
+  import tutorialsEs from '~/contents/es/tutorialsEs.js'
 
   export default {
     async asyncData ({app}) {
 
-      const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
-      
-      async function asyncImport (blogName) {
-        const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
+      const articles = app.i18n.locale === 'en' ? articlesEn : articlesEs
+      const tutorials = app.i18n.locale === 'en' ? tutorialsEn : tutorialsEs
+
+      async function asyncImport (contentName, type) {
+        const wholeMD = await import(`~/contents/${app.i18n.locale}/${type}/${contentName}.md`)
         return wholeMD.attributes
       }
 
-      return Promise.all(blogs.map(blog => asyncImport(blog)))
-      .then((res) => {
-        return {
-          blogs: res
-        }
-      })
+      const articlesContents = await Promise.all(articles.map(article => asyncImport(article, 'article')))
+      const tutorialsContents = await Promise.all(tutorials.map(tutorial => asyncImport(tutorial, 'tutorial')))
+
+      return {
+        posts: [
+          ...articlesContents,
+          ...tutorialsContents
+        ]
+      }
     },
     
     components: { BlogSection, Header },
@@ -82,7 +88,7 @@
 
 <style lang="scss" scoped>
 .banner {
-  height: calc(100vh - 35rem);
+  height: calc(100vh - 38rem);
   background: $primary;
   display: grid;
   width: 100%;

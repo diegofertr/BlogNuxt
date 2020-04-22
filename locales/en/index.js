@@ -30,6 +30,10 @@ export default {
   projects: {
     title: 'Personal projects'
   },
+  category: {
+    article: 'articles',
+    tutorial: 'tutorials'
+  },
   posts: 'Posts',
   home: 'Home',
   footer: footer

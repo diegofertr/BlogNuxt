@@ -1,7 +1,7 @@
 <template>
   <div class="page-index">
     <div class="container">
-      <h1>{{ $t('projects.title') }}</h1><br>
+      <h2 class="titulo">{{ $t('projects.title') }}</h2>
       <!-- <BlogSection :blogs="blogs"/> -->
     </div>
   </div>
@@ -13,6 +13,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  
+<style lang="scss" scoped>
+.container { 
+  margin-top: 3rem;
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+}
 </style>

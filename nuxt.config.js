@@ -1,15 +1,19 @@
 const builtAt = new Date().toISOString()
 const path = require('path')
 const { I18N } = require('./locales/i18n-nuxt-config')
-import blogsEn from './contents/en/blogsEn.js'
-import blogsEs from './contents/es/blogsEs.js'
+// import blogsEn from './contents/en/blogsEn.js'
+// import blogsEs from './contents/es/blogsEs.js'
+import articlesEn from './contents/en/articlesEn.js'
+import articlesEs from './contents/es/articlesEs.js'
+import tutorialsEn from './contents/en/tutorialsEn.js'
+import tutorialsEs from './contents/es/tutorialsEs.js'
 import Mode from "frontmatter-markdown-loader/mode"
 
 const productionUrl = {
   en: "/en",
   es: "/es"
 };
-const baseUrl = 'https://diegofertr.netlify.com';
+const baseUrl = 'https://diegofertr.netlify.app';
 
 module.exports = {
   env: {
@@ -17,7 +21,7 @@ module.exports = {
     productionUrl
   },
   head: {
-    title: 'Diego F. Ticona Ramos | Front-end Developer & Game Developer Aspirant',
+    title: 'Diego F. Ticona Ramos | Software Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0' },
@@ -145,7 +149,11 @@ module.exports = {
     routes: [
       '/es', '404'
     ]
-    .concat(blogsEn.map(w => `/blog/${w}`))
-    .concat(blogsEs.map(w => `es/blog/${w}`))
+    // .concat(blogsEn.map(w => `/blog/${w}`))
+    // .concat(blogsEs.map(w => `es/blog/${w}`))
+    .concat(articlesEn.map(w => `/article/${w}`))
+    .concat(articlesEs.map(w => `es/article/${w}`))
+    .concat(tutorialsEn.map(w => `/tutorial/${w}`))
+    .concat(tutorialsEs.map(w => `es/tutorial/${w}`))
   }
 }

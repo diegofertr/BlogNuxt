@@ -1,21 +1,31 @@
 <template>
   <li class="blog">
     <nuxt-link
-      :to="localePath({ name: `${tipoCard}-slug`, params: { slug: blog.name }})">
+      :to="localePath({ name: `${blog.category}-slug`, params: { slug: blog.name }})">
       <div class="blog__image">
-        <ImageResponsive
+        <!-- <ImageResponsive
           :imageURL="`blog/${blog.id}/_thumbnail.jpg`"
+          :classes="'cardThumbnail'"
+          :round-shadow="true"
+          :alt="blog.cardAlt" />  -->
+        <ImageResponsive
+          :imageURL="`${blog.category}/${blog.id}/_thumbnail.jpg`"
           :classes="'cardThumbnail'"
           :round-shadow="true"
           :alt="blog.cardAlt" /> 
       </div>
     </nuxt-link>
-    <div class="blog__date">
-      <small><font-awesome-icon class="social__content-icon" :icon="['fas', 'calendar-alt']"/> {{ blog.year }}</small>
+    <div class="blog__extras">
+      <div class="blog__date">
+        <small><font-awesome-icon class="social__content-icon" :icon="['fas', 'calendar-alt']"/> {{ blog.year }}</small>
+      </div>
+      <div class="blog__category">
+        <small><strong>{{ $t(`category.${blog.category}`) }}</strong></small>
+      </div>
     </div>
     <div class="blog__content">
       <h2 class="blog__title">
-        <nuxt-link :to="localePath({ name: `${tipoCard}-slug`, params: { slug: blog.name }})">
+        <nuxt-link :to="localePath({ name: `${blog.category}-slug`, params: { slug: blog.name }})">
           {{ blog.title }}
         </nuxt-link>
       </h2>
@@ -36,9 +46,6 @@ export default {
   props: {
     blog: {
       type: Object
-    },
-    tipoCard: {
-      type: String
     }
   },
   methods: {
@@ -59,6 +66,10 @@ export default {
   &[lazy='loaded'] {
     opacity: 1;
     border-radius: 1rem;
+  }
+
+  @media (max-width: $screen-sm) {
+    height: 15rem;
   }
 }
 
@@ -96,10 +107,33 @@ export default {
     }
   }
 
-  &__date {
-    padding-left: 10px;
-    padding-top: 5px;
+  &__extras {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  &__category {
     color: $primary-light;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid $primary-light;
+    border-radius: 2px;
+    padding: 1px 5px 1px 5px;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__date {
+    color: $primary-light;
+    @media (max-width: $screen-sm) {
+      font-size: 1.2rem;
+    }
   }
 
   &__content {

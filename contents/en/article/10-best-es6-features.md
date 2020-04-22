@@ -3,6 +3,7 @@ name: '10-best-es6-features'
 title: 10 top best features of ecmascript6
 year: 15 December 2019
 color: '#8e7964'
+category: 'article'
 trans: '10-mejores-caracteristicas-es6'
 id: 'es6-best-features'
 cardAlt: 'Image of 10 top best features of ecmascript6'

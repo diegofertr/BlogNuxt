@@ -1,32 +1,32 @@
 <template>
   <div class="page-index">
     <div class="container">
-      <h2 class="titulo">{{ $t('tutorials.title') }}</h2>
-      <BlogSection :blogs="tutorials" />
+      <h2 class="titulo">{{ $t('articles.title') }}</h2>
+      <BlogSection :blogs="articles" />
     </div>
   </div>
 </template>
 
 <script>
 import BlogSection from "~/components/Sections/BlogSection"
-import tutorialsEn from '~/contents/en/tutorialsEn.js'
-import tutorialsEs from '~/contents/es/tutorialsEs.js'
+import articlesEn from '~/contents/en/articlesEn.js'
+import articlesEs from '~/contents/es/articlesEs.js'
 
 export default {
   layout: 'seccion',
   async asyncData ({app}) {
 
-    const tutorials = app.i18n.locale === 'en' ? tutorialsEn : tutorialsEs
+    const articles = app.i18n.locale === 'en' ? articlesEn : articlesEs
     
-    async function asyncImport (tutorialName) {
-      const wholeMD = await import(`~/contents/${app.i18n.locale}/tutorial/${tutorialName}.md`)
+    async function asyncImport (articleName) {
+      const wholeMD = await import(`~/contents/${app.i18n.locale}/article/${articleName}.md`)
       return wholeMD.attributes
     }
 
-    return Promise.all(tutorials.map(tutorial => asyncImport(tutorial)))
+    return Promise.all(articles.map(article => asyncImport(article)))
     .then((res) => {
       return {
-        tutorials: res
+        articles: res
       }
     })
   },

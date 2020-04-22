@@ -17,8 +17,7 @@
       <blog-card
         v-for="blog in blogs"
         :key="blog.name"
-        :blog="blog"
-        :tipo-card="tipo" />
+        :blog="blog" />
     </ul>
   </section>
 </template>
@@ -30,9 +29,6 @@ export default {
   props: {
     blogs: {
       type: Array
-    },
-    tipo: {
-      type: String
     }
   }
 }
