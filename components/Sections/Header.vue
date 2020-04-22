@@ -145,38 +145,7 @@ export default {
   display: none;
 }
 
-.hero-mobile__nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: $primary;
-  z-index: 10;
-  padding-top: 2rem;
-  text-align: center;
-  width: 100%;
 
-  ul {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10rem;
-    padding-right: 10rem;
-
-    li {
-      border-bottom: 1px dashed $grey;
-      padding-bottom: 10px;
-
-      a {
-        font-size: 2.5rem
-      }
-    }
-  }
-
-  button {
-    font-size: 2.5rem
-  }
-}
 
 .hero-mobile {
   display: none;
@@ -194,6 +163,7 @@ export default {
     padding-top: 1rem;
     padding-left:  3rem;
     padding-right: 3rem;
+    padding-bottom: .5rem;
     // align-content: center;
 
     .hero-logo {
@@ -205,6 +175,40 @@ export default {
       }
     }
   }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $primary;
+    z-index: 10;
+    padding-top: 2rem;
+    text-align: center;
+    width: 100%;
+
+    ul {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10rem;
+      padding-right: 10rem;
+
+      li {
+        border-bottom: 1px dashed $grey;
+        padding-bottom: 10px;
+
+        a {
+          font-size: 2.5rem
+        }
+      }
+    }
+
+    button {
+      font-size: 2.5rem
+    }
+  }
+
 }
 
 .hero {
@@ -214,6 +218,7 @@ export default {
   padding-top: 1rem;
   padding-left:  20rem;
   padding-right: 20rem;
+  padding-bottom: 1rem;
   background: $primary;
 
   @media (max-width: $screen-sm) {

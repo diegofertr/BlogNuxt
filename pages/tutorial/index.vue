@@ -2,7 +2,7 @@
   <div class="page-index">
     <div class="container">
       <h2 class="titulo">{{ $t('tutorials.title') }}</h2>
-      <BlogSection :blogs="blogs"/> 
+      <BlogSection :blogs="blogs" tipo="tutorial" /> 
     </div>
   </div>
 </template>

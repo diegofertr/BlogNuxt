@@ -12,7 +12,7 @@
     <div class="container">
       <!-- <div class="main-section"> -->
       <div class="page-index nuxt-content">
-        <BlogSection :blogs="blogs"/>
+        <BlogSection :blogs="blogs" tipo="blog" />
       </div>
     </div>
   </div>

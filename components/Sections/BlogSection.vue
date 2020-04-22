@@ -13,11 +13,12 @@
         <span class="emoji-title emoji--rock-girl"/>  -->
       </div>
     </div>
-    <ul class="blogs__container">
+    <ul class="blogs__container"> 
       <blog-card
         v-for="blog in blogs"
         :key="blog.name"
-        :blog="blog" />
+        :blog="blog"
+        :tipo-card="tipo" />
     </ul>
   </section>
 </template>
@@ -29,6 +30,9 @@ export default {
   props: {
     blogs: {
       type: Array
+    },
+    tipo: {
+      type: String
     }
   }
 }

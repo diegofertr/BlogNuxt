@@ -1,7 +1,7 @@
 <template>
   <li class="blog">
     <nuxt-link
-      :to="localePath({ name: 'blog-slug', params: { slug: blog.name }})">
+      :to="localePath({ name: `${tipoCard}-slug`, params: { slug: blog.name }})">
       <div class="blog__image">
         <ImageResponsive
           :imageURL="`blog/${blog.id}/_thumbnail.jpg`"
@@ -15,7 +15,7 @@
     </div>
     <div class="blog__content">
       <h2 class="blog__title">
-        <nuxt-link :to="localePath({ name: 'tutorial-slug', params: { slug: blog.name }})">
+        <nuxt-link :to="localePath({ name: `${tipoCard}-slug`, params: { slug: blog.name }})">
           {{ blog.title }}
         </nuxt-link>
       </h2>
@@ -36,12 +36,15 @@ export default {
   props: {
     blog: {
       type: Object
+    },
+    tipoCard: {
+      type: String
     }
   },
   methods: {
-    goToPost () {
-      this.$router.push(this.localePath({ name: 'blog-slug', params: { slug: this.blog.name }}));
-    }
+    // goToPost () {
+    //   this.$router.push(this.localePath({ name: 'blog-slug', params: { slug: this.blog.name }}));
+    // }
   }
 }
 </script>
