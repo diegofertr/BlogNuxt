@@ -37,4 +37,5 @@ export default {
   posts: 'Posts',
   home: 'Home',
   footer: footer,
+  updated: 'Actualizado'
 }

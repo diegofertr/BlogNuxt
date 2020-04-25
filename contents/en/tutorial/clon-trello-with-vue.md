@@ -1,9 +1,10 @@
 ---
 name: 'clon-trello-with-vue'
 title: Trello clone with Vue
-year: 16 April 2020
+year: Apr 16, 2020
 color: 'green'
 category: 'tutorial'
+technology: vue
 # trans: '10-best-es6-features'
 trans: 'clon-trello-con-vue'
 id: 'trello-vue'

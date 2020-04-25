@@ -102,6 +102,14 @@ module.exports = {
       });
     }
   },
+  render: {
+    bundleRender: {
+      shouldPreload: (file, type) => {
+        // return ['font'].includes(type)
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
   plugins: [
     '~/plugins/lazyload',
     '~/plugins/globalComponents',
@@ -125,7 +133,7 @@ module.exports = {
        ]
     }]
   ],
-
+ 
   styleResources: {
     scss: [
       '@/assets/css/utilities/_variables.scss',

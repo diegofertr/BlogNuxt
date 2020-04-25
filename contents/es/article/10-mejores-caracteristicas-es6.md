@@ -1,9 +1,10 @@
 ---
 name: '10-mejores-caracteristicas-es6'
 title: 10 mejores características de ES6
-year: 15 de Diciembre de 2019
+year: Dic 15, 2019
 color: '#8e7964'
 category: 'article'
+technology: javascript
 trans: '10-best-es6-features'
 id: 'es6-best-features'
 cardAlt: 'Imagen de 10 mejores características de ES6'

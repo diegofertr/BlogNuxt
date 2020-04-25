@@ -46,10 +46,11 @@ export default {
     // margin-left: -20px;
     // margin-right: -20px;
     margin-top: 2rem;
+
     
     @media (min-width: $screen-sm){
       grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
+      // grid-gap: 2rem;
       display: grid;
     }
   

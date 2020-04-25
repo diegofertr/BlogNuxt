@@ -1,42 +1,28 @@
 <template>
   <li class="blog">
-    <nuxt-link
-      :to="localePath({ name: `${blog.category}-slug`, params: { slug: blog.name }})">
-      <div class="blog__image">
-        <!-- <ImageResponsive
-          :imageURL="`blog/${blog.id}/_thumbnail.jpg`"
-          :classes="'cardThumbnail'"
-          :round-shadow="true"
-          :alt="blog.cardAlt" />  -->
-        <ImageResponsive
-          :imageURL="`${blog.category}/${blog.id}/_thumbnail.jpg`"
-          :classes="'cardThumbnail'"
-          :round-shadow="true"
-          :alt="blog.cardAlt" /> 
+    <div class="blog__category">
+      <nuxt-link :to="localePath({ name: `${blog.category}-slug`, params: { slug: blog.name }})">
+        {{ $t(`category.${blog.category}`) }}
+      </nuxt-link>
+    </div>
+    <nuxt-link :to="localePath({ name: `${blog.category}-slug`, params: { slug: blog.name }})">
+      <div class="blog__content">
+        <h2 class="blog__title">
+          {{ blog.title }}
+        </h2>
+        <p class="blog__description">
+          {{ blog.description }}
+        </p>
       </div>
     </nuxt-link>
-    <div class="blog__extras">
-      <div class="blog__date">
-        <small><font-awesome-icon class="social__content-icon" :icon="['fas', 'calendar-alt']"/> {{ blog.year }}</small>
-      </div>
-      <div class="blog__category">
-        <small><strong>{{ $t(`category.${blog.category}`) }}</strong></small>
-      </div>
-    </div>
-    <div class="blog__content">
-      <h2 class="blog__title">
-        <nuxt-link :to="localePath({ name: `${blog.category}-slug`, params: { slug: blog.name }})">
-          {{ blog.title }}
-        </nuxt-link>
-      </h2>
-      <p class="blog__description">
-        {{ blog.description }}
-      </p>
-    </div>
     <div class="blog__footer">
-      <!-- <button class="blog__button" @click="goToPost">
-        Ver más
-      </button> -->
+      <img class="blog__techimage" :src="imageRequired" alt="technology">
+      <div class="blog__extras">
+        <div class="blog__tech">{{ blog.technology }}</div>
+        <div class="blog__date">
+          {{ $t('updated') }} {{ blog.year }}
+        </div>
+      </div>
     </div>
   </li>
 </template>
@@ -48,10 +34,10 @@ export default {
       type: Object
     }
   },
-  methods: {
-    // goToPost () {
-    //   this.$router.push(this.localePath({ name: 'blog-slug', params: { slug: this.blog.name }}));
-    // }
+  computed: {
+    imageRequired () {
+      return require(`../assets/images/icons/${this.blog.technology}.jpg`)
+    }
   }
 }
 </script>
@@ -75,17 +61,24 @@ export default {
 
 
 .blog {
-  border-radius: 10px;
   line-height: 1;
-  box-shadow: 0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1);
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
   justify-content: space-between;
   font-family: 'Nunito', Arial, sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $grey-light;
+
+  &:hover {
+    box-shadow: 0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1);
+    border-radius: .5rem;
+  }
 
   @media (min-width: $screen-sm){
-    padding-bottom: 0;
+    padding-bottom: 1rem;
 
     &:last-child {
       margin-right: 0;
@@ -107,43 +100,27 @@ export default {
     }
   }
 
-  &__extras {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
-
   &__category {
     color: $primary-light;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    border: 1px solid $primary-light;
-    border-radius: 2px;
-    padding: 1px 5px 1px 5px;
+    margin: 1rem;
+    margin-bottom: 0;
 
     @media (max-width: $screen-sm) {
-      font-size: 1rem;
-    }
-  }
-
-  &__date {
-    color: $primary-light;
-    @media (max-width: $screen-sm) {
-      font-size: 1.2rem;
+      font-size: .8rem;
     }
   }
 
   &__content {
     padding: 10px;
+  }
 
-    a {
-      transition: color .3s;
-      &:hover {
-        color: $primary-lighter !important;
-      }
+  a {
+    transition: color .3s;
+    &:hover {
+      color: $primary-lighter !important;
     }
   }
 
@@ -151,14 +128,18 @@ export default {
   &__title {
     padding-top: .8rem;
     font-size: 2.2rem;
-    // color: $secondary !important;
     transition: color .3s;
+    margin-bottom: 1rem;
+
+    @media (max-width: $screen-sm) {
+      font-size: 2rem;
+    }
   }
 
   &__description {
     margin: 0;
+    // margin-top: -1rem;
     color: $grey-2;
-
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -167,23 +148,46 @@ export default {
   }
 
   &__footer {
-    // margin: 0;
     margin-bottom: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
   }
 
-  &__button {
-    font-family: 'Nunito', Arial, sans-serif;
-    background: transparent;
-    border: 1px solid $primary;
-    color: $primary;
-    border-radius: 50px;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+  &__techimage {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    // border: 1px solid red;
+    // background-color: green;
+    object-fit: cover;
+  }
 
-    
+  &__extras {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  &__tech {
+    // color:black;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+  }
+
+  &__date {
+    // color: $primary-light;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1.2rem;
+    }
   }
 }
 </style>
