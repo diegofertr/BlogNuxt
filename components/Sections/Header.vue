@@ -4,7 +4,7 @@
       <nav class="hero__nav">
         <div class="hero__nav-left">
           <nuxt-link :to="localePath('index')" class="hero__nav-logo">
-            <img src="../../assets/images/loguito.png" class="hero-logo" alt="Logo principal">
+            <img src="../../assets/images/logo-diego.svg" class="hero-logo" alt="Logo principal">
           </nuxt-link>
           <div class="hero__nav-content">
             <ul class="nav-list">
@@ -64,7 +64,7 @@
     <div class="hero-mobile">
       <!-- <h2>Navegación modo mobile</h2> -->
       <nuxt-link :to="localePath('index')" class="hero__nav-logo">
-        <img src="../../assets/images/loguito.png" class="hero-logo" alt="Logo principal">
+        <img src="../../assets/images/logo-diego.svg" class="hero-logo" alt="Logo principal">
       </nuxt-link>
       <button @click="openNav()" aria-label="Abrir menú principal">
         <font-awesome-icon class="social__content-icon" :icon="['fas', 'bars']"/>

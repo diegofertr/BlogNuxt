@@ -50,7 +50,7 @@ export default {
     
     @media (min-width: $screen-sm){
       grid-template-columns: 1fr 1fr;
-      // grid-gap: 2rem;
+      grid-gap: 5rem;
       display: grid;
     }
   

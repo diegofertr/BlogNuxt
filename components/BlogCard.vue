@@ -64,18 +64,16 @@ export default {
   line-height: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
+  // margin-bottom: 5rem;
   justify-content: space-between;
   font-family: 'Nunito', Arial, sans-serif;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid $grey-light;
+  // padding-left: 2rem;
+  // padding-right: 2rem;
+  // padding-bottom: 1rem;
+  // border-bottom: 1px solid $grey-light;
 
-  &:hover {
-    box-shadow: 0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1);
-    border-radius: .5rem;
-  }
+  // box-shadow: 0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1);
+  // border-radius: .5rem;
 
   @media (min-width: $screen-sm){
     padding-bottom: 1rem;
@@ -85,37 +83,20 @@ export default {
     }
   }
 
-  &__image {
-    margin: -20px 10px 0 10px;
-    // padding-bottom: 0;
-    display: block;
-    // margin-top: -20px;
-    transition: all .5s;
-    background: #cacaca;
-    border-radius: 10px;
-
-    &:hover {
-      // transform: scaleY(1.1);
-      transform: translate(0, -15px);
-    }
-  }
-
   &__category {
     color: $primary-light;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 1rem;
-    margin-bottom: 0;
+    // margin: 1rem;
+    // margin-bottom: 0;
 
     @media (max-width: $screen-sm) {
       font-size: .8rem;
     }
   }
 
-  &__content {
-    padding: 10px;
-  }
+  &__content {}
 
   a {
     transition: color .3s;
@@ -126,10 +107,10 @@ export default {
 
 
   &__title {
-    padding-top: .8rem;
     font-size: 2.2rem;
     transition: color .3s;
-    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: .5rem;
 
     @media (max-width: $screen-sm) {
       font-size: 2rem;
@@ -138,7 +119,6 @@ export default {
 
   &__description {
     margin: 0;
-    // margin-top: -1rem;
     color: $grey-2;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -148,9 +128,7 @@ export default {
   }
 
   &__footer {
-    margin-bottom: 10px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-top: 1.2rem;
     display: flex;
     align-items: center;
   }
@@ -159,8 +137,6 @@ export default {
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
-    // border: 1px solid red;
-    // background-color: green;
     object-fit: cover;
   }
 
@@ -168,11 +144,9 @@ export default {
     display: flex;
     flex-direction: column;
     margin-left: 1.5rem;
-    margin-top: 1rem;
   }
 
   &__tech {
-    // color:black;
     color: $primary;
     text-transform: uppercase;
     font-weight: bold;
@@ -181,7 +155,6 @@ export default {
   }
 
   &__date {
-    // color: $primary-light;
     font-size: 1.3rem;
     text-transform: uppercase;
 
