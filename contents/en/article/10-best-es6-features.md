@@ -16,7 +16,7 @@ description: |
 
 ECMAScript 2015 commonly known as ES6 or ES2015 released on June 2015. ES5 was released on December 2009. It would then take almost six years for the next version of ECMAScript to be released. So, there are many exciting feature in ES6.
 
-Here’s the list of the top 10 best ES6 features so that javascript developers can write a more readable and understandable code (in no particular order):
+Here’s the list of the top 10 best ES6 features for a busy javascript developer(in no particular order):
 
 1. Default Parameters in ES6
 2. Template Literals in ES6
@@ -24,10 +24,10 @@ Here’s the list of the top 10 best ES6 features so that javascript developers 
 4. Destructuring Assignment in ES6
 5. Enhanced Object Literals in ES6
 6. Arrow Functions in ES6
-7. Promises in ES6
-8. Block-Scoped Constructs Let and Const
-9. Classes in ES6
-10. Modules in ES6
+7. Let and Const
+8. Map and Filter
+9. Modules in ES6
+10. Classes in ES6
 11. For of (bonus)
 
 
@@ -130,17 +130,25 @@ $('.btn').click((event) => {
 
 *For more info, [click here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)*
 
-### 7. Promises in ES6
+### 7. Let and Const
 
-Promises are used for asynchronous execution. In ES6, we can use promise with arrow function shown below.
 
-```javascript
-var asyncCall =  new Promise((resolve, reject) => {
-   // do something async 
-   resolve();
-}).then(()=> {   
-   console.log('Yay!');
-})
-```
 
-*For more info, [click here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)*
+
+## 8. Map and Filter
+
+
+
+
+### 9. Modules
+
+
+
+
+### 10. Classes
+
+
+
+
+
+### 11. For..of (bonus)
