@@ -132,22 +132,22 @@ $('.btn').click((event) => {
 
 ### 7. Let and Const
 
+Coming soon...
 
 
+### 8. Map and Filter
 
-## 8. Map and Filter
-
-
+Coming soon...
 
 
 ### 9. Modules
 
-
+Coming soon...
 
 
 ### 10. Classes
 
-
+Coming soon...
 
 
 
