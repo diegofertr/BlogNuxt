@@ -14,10 +14,10 @@ description: |
 
 ## ¿Qué es ECMAScript2015 o ES6?
 
-ECMAScript 2015 o más conocido como ES6 o ES2015 lanzado en Junio de 2015. ES5 fue lanzado en Diciembre de 2009. Entonces tomaría alrededor de 6 años para la siguiente versión de ECMAScript para ser lanzado. Entonces, hay muchas características interesantes en ES6.
+ECMAScript 2015 o más conocido como ES6 o ES2015 lanzado en Junio de 2015. En contraposición ES5 fue lanzado en Diciembre de 2009, entonces, hay muchas características nuevas e interesantes en ES6.
 
 
-Acá está una lista con el Top 10 de mejores características de ES6 para los desarrolladores de javacript "ocupados" (en ningún orden particular):
+Acá está una lista con el Top 10 de mejores características de ES6 para que los desarrolladores en javacript puedan escribir un código más legible y entendible (en ningún orden particular):
 
 1. Parámetros por defecto
 2. Template Literals
@@ -25,10 +25,10 @@ Acá está una lista con el Top 10 de mejores características de ES6 para los d
 4. Asignación de destructuración
 5. Literals de objetos mejorados
 6. Funciones flecha
-7. Promesas
-8. Let y Const
-9. Clases
-10. Módulos
+7. Let y Const
+8. Map y Filter
+9. Módulos
+10. Clases
 11. For of (bonus)
 
 Lo que más me atrae de Nuxt es la filosofía *serverless* (aunque Nuxt también puede ser SSR) y el prerendering estático que proporciona a aplicaciones SPA. Resumidamente, con ello se puede combinar lo mejor de una web estática: HTML compilado, lo que conlleva mejor SEO, y lo mejor de una *single page application*: Webpack, optimizaciones de caché, lazy-loading, funciones y datos asíncronos...
@@ -105,7 +105,7 @@ console.log(q);// true
 
 ### 5. Mejorado en la declaración de objetos
 
-Lost literales de objetos facilitan la creación rápida de objetos con propiedades dentro de sus llaves, veamos:
+Los literales de objetos facilitan la creación rápida de objetos con propiedades dentro de sus llaves, veamos:
 
 ```javascript
 function getLaptop(make, model, year) {
@@ -127,25 +127,124 @@ getLaptop("Apple", "MacBook", "2015");
 (Mi parte favorita) Las flechas harán que una función se comporte de una manera correcta, es decir que se tendrá el mismo valor que en el contexto de la función, no mutará:
 
 ```javascript
-$('.btn').click((event) => {   
-   this.doSomething() 
+$('.btn').click((event) => {
+   this.doSomething()
 });
 ```
 
 *Para más información, [click aquí](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)*
 
 
-### 7. Promesas
+### 7. Let y Const
 
-Las promesas son utilizadas para ejecuciones asíncronas. En ES6, podemos usar promesas con funciones flecha
+A partir de ES6 se tiene por convencion declarar las variables con `let` y `const` y se da como mala práctica el uso de `var`, veamos la diferencia de ambos:
 
 ```javascript
-var asyncCall =  new Promise((resolve, reject) => {
-   // do something async 
-   resolve();
-}).then(()=> {   
-   console.log('Yay!');
-})
+let nombre = 'Juan';
+const ci = '2555555';
+
+
+console.log(nombre);//Juan
+nombre = 'Pedro';
+console.log(nombre);//Pedro
+
+ci = 123456;//Uncaught TypeError: Assignment to constant variable.
 ```
 
-*Para más información, [click aquí](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)*
+Entonces en resumen, las variables definidas con `let` pueden cambiar a lo largo de nuestro código, mientras que mediante `const` las variables no tienen permitido cambiar su valor y por tanto nos muestra el error.
+
+*Para más información, [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) y [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)*
+
+
+
+### 8. Map y Filter
+
+Map es una función de ES6 específica para `arrays`, que nos permite recorrer un determinado array y nos devuelve como resultado otro array del mismo tamaño del original pero con contenido diferente según sea el caso.
+
+
+```js
+
+let lista1 = [1, 2, 3, 4, 5];
+
+const lista2 = lista1.map(item => {
+   return item*2;
+});
+
+console.log(lista2);//[2, 4, 6, 8, 10]
+```
+
+
+*Para más información, [click aquí](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)*
+
+
+-------------------
+
+Filter es otra función de ES6 específica para `arrays`, a diferencia de Map, este método crea otro array a partir de una determinada condición aplicada al array original.
+
+
+
+```js
+
+let lista1 = [1, 2, 3, 4, 5];
+
+const lista2 = lista1.filter(item => item % 2 === 0);
+
+console.log(lista2);//[2, 4]
+```
+
+
+
+### 9. Módulos
+
+ES6 viene con la funcionalidad de módulos, que nos permite importar/exportar objetos, funciones y clases desde código.
+
+```js
+//lib/utils.js
+module "utils" {
+   export function greeting (name) {
+      console.log(`Hi ${name}`);
+   }
+}
+```
+
+Y para importar la función desde otro archivo JS:
+
+```js
+// app.js
+
+import { greeting } from 'utils '
+
+```
+
+
+
+### 10. Clases
+
+ES6 introduce clases de Javascript que se basa en la herencia de prototipos, esta nueva sintaxis hace que sea mas sencillo crear objetos, aprovechar la herencia de prototipos y reutilizar el código.
+
+```js
+class Auto {
+   constructor(marca, color) {
+      this.marca = marca;
+      this.color = color;
+   }
+}
+```
+
+
+
+### 11. For of (bonus)
+
+En ES6 se incluye un nuevo tipo de bucle, este nos permite iterar a través de los elementos de objetos iterables como por ejm: String, Array, Set, Map, etc.
+
+```js
+const lista = [1, 2, 3, 4, 5]
+for (let value of lista) {
+   console.log(value);
+}
+
+const nombre = 'Fernando'
+for (let letra of nombre) {
+   console.log(letra);
+}
+```

@@ -16,7 +16,7 @@ description: |
 
 ECMAScript 2015 commonly known as ES6 or ES2015 released on June 2015. ES5 was released on December 2009. It would then take almost six years for the next version of ECMAScript to be released. So, there are many exciting feature in ES6.
 
-Here’s the list of the top 10 best ES6 features for a busy javascript developer(in no particular order):
+Here’s the list of the top 10 best ES6 features so that javascript developers can write a more readable and understandable code (in no particular order):
 
 1. Default Parameters in ES6
 2. Template Literals in ES6
